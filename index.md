@@ -9,6 +9,6 @@ title: Egel Language
 <body markdown="1">
 # The Egel Language
 
-A small toy language.
+A very small toy language.
 </body>
 </html>
