@@ -4,7 +4,8 @@ body {
   line-height: 1.6;
   padding-top: 0px;
   padding-bottom: 0px;
-  background-color: #222;
+  background-color: #333333;
+  color: #DDDDDD
   padding: 30px; }
 
 body > *:first-child {
@@ -13,9 +14,9 @@ body > *:last-child {
   margin-bottom: 0 !important; }
 
 a {
-  color: #4183C4; }
+  color: #FFAAAA; }
 a.absent {
-  color: #cc0000; }
+  color: #FFBBBB; }
 a.anchor {
   display: block;
   padding-left: 30px;
@@ -158,8 +159,8 @@ blockquote {
 table {
   padding: 0; }
   table tr {
-    border-top: 1px solid #444444;
-    background-color: #333333;
+    border-top: 1px solid #AAAAAA;
+    background-color: #444444;
     margin: 0;
     padding: 0; }
     table tr:nth-child(2n) {
@@ -249,7 +250,7 @@ code, tt {
   padding: 0 5px;
   white-space: nowrap;
   border: 1px solid #eaeaea;
-  background-color: #f8f8f8;
+  background-color: #3333AA;
   border-radius: 3px; }
 
 pre code {
@@ -260,8 +261,8 @@ pre code {
   background: transparent; }
 
 .highlight pre {
-  background-color: #f8f8f8;
-  border: 1px solid #cccccc;
+  background-color: #666666;
+  border: 1px solid #888888;
   font-size: 13px;
   line-height: 19px;
   overflow: auto;
@@ -269,8 +270,8 @@ pre code {
   border-radius: 3px; }
 
 pre {
-  background-color: #f8f8f8;
-  border: 1px solid #cccccc;
+  background-color: #666666;
+  border: 1px solid #888888;
   font-size: 13px;
   line-height: 19px;
   overflow: auto;
