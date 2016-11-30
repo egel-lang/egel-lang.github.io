@@ -154,7 +154,9 @@ blockquote {
     margin-bottom: 0; }
 
 table {
-  padding: 0; }
+  padding: 0;  
+  font-size: 14px;
+  }
   table tr {
     border-top: 1px solid #BBBBBB;
     background-color: #444444;
@@ -164,12 +166,12 @@ table {
       background-color: #333333; }
     table tr th {
       font-weight: bold;
-      border: 1px solid #AAAAAA;
+      border: 0px solid #222222;
       text-align: left;
       margin: 0;
       padding: 6px 13px; }
     table tr td {
-      border: 1px solid #AAAAAA;
+      border: 0px solid #222222;
       text-align: left;
       margin: 0;
       padding: 6px 13px; }
