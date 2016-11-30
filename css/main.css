@@ -2,9 +2,9 @@ body {
   font-family: Helvetica, arial, sans-serif;
   font-size: 14px;
   line-height: 1.6;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: white;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #222;
   padding: 30px; }
 
 body > *:first-child {
@@ -36,6 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
   background: url("../../images/modules/styleguide/para.png") no-repeat 10px center;
+  background-color: #555555
   text-decoration: none; }
 
 h1 tt, h1 code {
@@ -58,12 +59,15 @@ h6 tt, h6 code {
 
 h1 {
   font-size: 28px;
-  color: black; }
+  color: white;
+  background: transparent url("../../images/modules/pulls/dirty-shade.png") repeat-x 0 0;
+  border: 0 none;  
+}
 
 h2 {
   font-size: 24px;
   border-bottom: 1px solid #cccccc;
-  color: black; }
+  color: white; }
 
 h3 {
   font-size: 18px; }
@@ -154,8 +158,8 @@ blockquote {
 table {
   padding: 0; }
   table tr {
-    border-top: 1px solid #cccccc;
-    background-color: white;
+    border-top: 1px solid #444444;
+    background-color: #333333;
     margin: 0;
     padding: 0; }
     table tr:nth-child(2n) {
