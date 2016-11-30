@@ -5,7 +5,7 @@ body {
   padding-top: 0px;
   padding-bottom: 0px;
   background-color: #333333;
-  color: #DDDDDD
+  color: #DDDDDD;
   padding: 30px; }
 
 body > *:first-child {
@@ -14,9 +14,9 @@ body > *:last-child {
   margin-bottom: 0 !important; }
 
 a {
-  color: #FFAAAA; }
+  color: #BBAAAA; }
 a.absent {
-  color: #FFBBBB; }
+  color: #FFAAAA; }
 a.anchor {
   display: block;
   padding-left: 30px;
@@ -33,6 +33,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   -webkit-font-smoothing: antialiased;
   cursor: text;
+  color: #DDDDDD;
   position: relative; }
 
 h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
@@ -259,6 +260,11 @@ pre code {
   white-space: pre;
   border: none;
   background: transparent; }
+
+.highlighter-rouge {
+  background-color: #666666;
+  border: 1px solid #888888;
+}
 
 .highlight pre {
   background-color: #666666;
