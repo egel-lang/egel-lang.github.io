@@ -125,7 +125,6 @@ ul :last-child, ol :last-child {
 dl {
   padding: 0; }
   dl dt {
-    font-size: 14px;
     font-weight: bold;
     font-style: italic;
     padding: 0;
