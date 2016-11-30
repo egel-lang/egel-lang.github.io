@@ -1,6 +1,6 @@
 body {
   font-family: Helvetica, arial, sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.6;
   padding-top: 0px;
   padding-bottom: 0px;
@@ -278,8 +278,8 @@ pre code {
 pre {
   background-color: #AAAAAA;
   border: 1px solid #BBBBBB;
-  font-size: 13px;
-  line-height: 19px;
+  font-size: 18px;
+  line-height: 20px;
   overflow: auto;
   padding: 6px 10px;
   border-radius: 3px; }
