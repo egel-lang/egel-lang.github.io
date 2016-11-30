@@ -263,11 +263,13 @@ pre code {
 
 .highlighter-rouge {
   background-color: #666666;
+  color: #222222;
 }
 
 .highlight pre {
   background-color: #666666;
   border: 1px solid #888888;
+  color: #222222;
   font-size: 13px;
   line-height: 19px;
   overflow: auto;
