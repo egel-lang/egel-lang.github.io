@@ -59,10 +59,11 @@ h6 tt, h6 code {
   font-size: inherit; }
 
 h1 {
-  font-size: 28px;
+  font-size: 40px;
   color: #AAAAAA;
   background-color: #555555;
-  background: transparent url("../../images/modules/pulls/dirty-shade.png") repeat-x 0 0;
+  padding-top: 40px;
+  padding-bottom: 30px;
   border: 0 none;  
 }
 
