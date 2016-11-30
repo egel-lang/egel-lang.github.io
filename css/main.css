@@ -151,7 +151,7 @@ dl {
 blockquote {
   border-left: 4px solid #dddddd;
   padding: 0 15px;
-  color: #777777; }
+  }
   blockquote > :first-child {
     margin-top: 0; }
   blockquote > :last-child {
@@ -165,7 +165,7 @@ table {
     margin: 0;
     padding: 0; }
     table tr:nth-child(2n) {
-      background-color: #f8f8f8; }
+      background-color: #555555; }
     table tr th {
       font-weight: bold;
       border: 1px solid #cccccc;
@@ -263,7 +263,6 @@ pre code {
 
 .highlighter-rouge {
   background-color: #666666;
-  border: 1px solid #888888;
 }
 
 .highlight pre {
