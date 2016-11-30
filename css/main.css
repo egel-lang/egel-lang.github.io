@@ -257,18 +257,18 @@ code, tt {
 pre code {
   margin: 0;
   padding: 0;
-  color: #222222;
+  color: #111111;
   white-space: pre;
   border: none;
   background: transparent; }
 
 .highlighter-rouge {
-  background-color: #666666;
-  color: #222222;
+  background-color: #777777;
+  color: #111111;
 }
 
 .highlight pre {
-  background-color: #666666;
+  background-color: #777777;
   border: 1px solid #888888;
   color: #222222;
   font-size: 13px;
