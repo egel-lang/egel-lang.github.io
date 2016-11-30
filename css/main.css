@@ -33,7 +33,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   -webkit-font-smoothing: antialiased;
   cursor: text;
-  color: #DDDDDD;
   position: relative; }
 
 h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
@@ -61,7 +60,8 @@ h6 tt, h6 code {
 
 h1 {
   font-size: 28px;
-  color: white;
+  color: #AAAAAA;
+  background-color: #555555;
   background: transparent url("../../images/modules/pulls/dirty-shade.png") repeat-x 0 0;
   border: 0 none;  
 }
@@ -69,7 +69,7 @@ h1 {
 h2 {
   font-size: 24px;
   border-bottom: 1px solid #cccccc;
-  color: white; }
+}
 
 h3 {
   font-size: 18px; }
@@ -257,6 +257,7 @@ code, tt {
 pre code {
   margin: 0;
   padding: 0;
+  color: #222222;
   white-space: pre;
   border: none;
   background: transparent; }
