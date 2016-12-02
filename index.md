@@ -13,7 +13,7 @@ A very small toy language.
 
 ## The Github repository
 
-You can find the sources on http://egel-lang.github.com
+You can find the sources on [egel-lang.github.com](http://egel-lang.github.com)
 
 </body>
 </html>
