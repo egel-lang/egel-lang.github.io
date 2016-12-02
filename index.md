@@ -11,5 +11,9 @@ title: Egel Language
 
 A very small toy language.
 
+## The Github repository
+
+You can find the sources on http://egel-lang.github.com
+
 </body>
 </html>
