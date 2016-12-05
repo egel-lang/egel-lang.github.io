@@ -12,6 +12,7 @@ title: Egel Language
 Egel is a very small toy language based on untyped eager combinator rewriting.
 
 Possible uses are:
+
 + Small 'mathy' domain specific languages
 + Experiments with untyped rewriting
 + Mobile code
