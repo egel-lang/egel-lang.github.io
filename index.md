@@ -18,6 +18,7 @@ Possible uses are:
 + Mobile code
 
 Egel is mostly a Lisp descendant and falls in the same category as Q. 
+Conceptually, it pre-dates Miranda, ML, or Haskell.
 The programming style is
 similar to functional programming though the operational semantics is
 slightly novel.
@@ -54,7 +55,7 @@ where the computationally intensive part is done by calling native
 routines.
 
 Internally, combinators are represented as referenced counted C++ objects and
-there is no garbage collector for lightweight seamless integration with C/C++.
+there is no garbage collector for light-weight seamless integration with C/C++.
 Also, the interpreter is stackless to later allow for massive concurrency.
 
 Definitions are translated to bytecode in a small instructionset for
@@ -69,8 +70,9 @@ work, of course.)
 Egel is developed as a hobby project to explore some ideas the author
 has. The intention is to grow the language to support different math
 libraries and then move towards making the code mobile. The aim
-is to become a small data center language for distributed ad-hoc
-computation; i.e., a light-weight solution for moving code to data.
+is to become a small data-center language for distributed ad-hoc
+computation; i.e., a light-weight solution for moving code to data
+fast.
 
 ## Links
 
