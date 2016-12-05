@@ -79,7 +79,7 @@ fast.
 
 You can find the sources on [github](http://github.com/egel-lang/).
 I blog about my progress on [blogger](http://egel-language.blogspot.nl/).
-I intend to write a FAQ once.
+I started on a [FAQ](https://egel-lang.github.io/FAQ.html).
 
 ## Thanks
 
