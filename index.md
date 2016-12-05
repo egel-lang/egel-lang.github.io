@@ -19,6 +19,7 @@ Possible uses are:
 
 Egel is mostly a Lisp descendant and falls in the same category as Q. 
 Conceptually, it pre-dates Miranda, ML, or Haskell.
+
 The programming style is
 similar to functional programming though the operational semantics is
 slightly novel.
