@@ -57,13 +57,13 @@ routines.
 
 Internally, combinators are represented as referenced counted C++ objects and
 there is no garbage collector for light-weight seamless integration with C/C++.
-Also, the interpreter is stackless to later allow for massive concurrency.
+Also, the interpreter is stackless to later allow for concurrency.
 
 Definitions are translated to bytecode in a small instructionset for
-optimal portability.
+portability.
 
 The interpreter is being developed at the moment and is in a pre-release
-stage. It can only symbolically evaluate at the moment (which is half of the
+stage. It can only symbolically evaluate at the moment (which is most of the
 work, of course.)
 
 ## Roadmap and mobile code
