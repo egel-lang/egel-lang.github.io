@@ -67,7 +67,7 @@ Yes, and no. Or, no and yes. There isn't a type system for various reasons:
   
 ## I am implementing cool product X. Should I include Egel for scripting?
 
-+ No. Egel is experimental, probably full of bugs, and you will regret
++ No. Egel is experimental, probably full of bugs, and you will likely regret
   not having assignment. I recommend Lua, a small Lisp, or Python for your
   needs.
   
