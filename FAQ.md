@@ -38,11 +38,11 @@ Yes, and no. Or, no and yes. There isn't a type system for various reasons:
 
 ## Eager rewriting? Surely modern math would suggest a lazy system?
 
-+ No. Not for serious tasks in my opinion. Every once so often an angry mail
-  comes by on the Haskell list from some user who coded a small data processing
-  application which when run on a large data set suddenly starts to consume all 
-  memory and become unresponsive due to lazy evaluation. I consider this a 
-  show stopper. Algorithms must have predictable behavior once implemented.
++ No. Not for serious tasks in my opinion. In lazy systems, every once so someone codes a 
+  small data processing application which when run on a large data set suddenly 
+  starts to consume all memory and become unresponsive due to lazy evaluation. 
+  I consider this a show stopper. 
+  Algorithms must have predictable behavior once implemented.
   There is no excuse for a language where you implement some tooling which
   can abruptly explode on some input data.
 + Programmers have no idea how lazy evaluation behaves. They simply cannot
@@ -103,6 +103,6 @@ Yes, and no. Or, no and yes. There isn't a type system for various reasons:
 ## There's no concurrency in the VM? Where's the stack?
 
 + Not yet. An Egel object is a term referenced by a pointer. I hope to implement
-  async/await on these terms where I will try to exploit that another thread isn't
+  async/await on these terms where I will try to exploit that a thread isn't
   larger than a pointer.
 
