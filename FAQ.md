@@ -87,7 +87,7 @@ Yes, and no. Or, no and yes. There isn't a type system for various reasons:
   the collector makes a full sweep. In Egel, file handles are closed
   immediately after an object goes out of scope. That's the way it should
   be.
-+ References counting is local which means it might start to pay off
++ Reference counting is local which means it might start to pay off
   on larger objects and once I implement concurrent evaluation.
 + Again, you better hope I got every invariant right, though.
 
