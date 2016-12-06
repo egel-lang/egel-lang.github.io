@@ -22,14 +22,14 @@ Yes, and no. Or, no and yes. There isn't a type system for various reasons:
   trivial scripting tasks.
 + Type systems are a nice to have. Surprisingly, the workhorse of functional
   programming after sixty years still is Lisp. Its usage outnumbers other
-  functional languages by several orders. I am not sure what to conclude from that,
+  functional languages by several orders. I am not sure what to conclude from that
   but at least it shows that in practice people don't care much.
 + Types get in the way. Some mathematics is more easily described, matrix operations,
   in an untyped language. I want to script data-center calculations. It seemed
   a reasonable choice.
 + I wouldn't know what type system to implement. As a language needs to
   support more features its type system also becomes more baroque to meet
-  new requirements. Academics constantly publish about novel type system
+  new requirements. Academics constantly publish novel type system
   fixing yet another triviality, it's hard to get right and easy to get wrong.
 + After I got used to the idea I actually started wondering what would open
   up with an untyped language. Lisp research has lead to some baffling new 
@@ -40,22 +40,32 @@ Yes, and no. Or, no and yes. There isn't a type system for various reasons:
 
 + No. Not for serious tasks in my opinion. Every once so often an angry mail
   comes by on the Haskell list from some user who coded a small data processing
-  application which when run on a large data set suddenly started to consume all 
+  application which when run on a large data set suddenly starts to consume all 
   memory and become unresponsive due to lazy evaluation. I consider this a 
   show stopper. Algorithms must have predictable behavior once implemented.
-  There is no excuse for a language where you implement some tooling, which
-  can at an arbitrary point explode on some input data.
+  There is no excuse for a language where you implement some tooling which
+  can abruptly explode on some input data.
 + Programmers have no idea how lazy evaluation behaves. They simply cannot
   keep track of it. Predictable behavior is better.
 + I do not intend to be very pure with this language. Which, see above,
   eager rewriting serves better.
 
+## What is this combinator rewriting you talk about?
+
++ Combinator rewriting is an old approach to implementing (lazy) functional
+  languages. It fell out of grace as it was recognized as being a slow
+  manner of evaluation. But I still like the idea and revived it with
+  a twist in order to implement mobile code. The basic idea is to have
+  migrating combinator definitions. My translation scheme may explode 
+  into too many of them, but hey, it's experimental!
+
 ## Do you support tail calls?
 
 + I support an experimental trivial eager rewrite system which should
-  make tail calls unnecessary. You better hope I got it right though.
+  make tail calls unnecessary. It's expensive and you better hope I got 
+  it right though.
   
-## I am implementing cool product X. Should I include Egel?
+## I am implementing cool product X. Should I include Egel for scripting?
 
 + No. Egel is experimental, probably full of bugs, and you will regret
   not having assignment. I recommend Lua, a small Lisp, or Python for your
@@ -68,9 +78,9 @@ Yes, and no. Or, no and yes. There isn't a type system for various reasons:
 
 ## Why do you reference count?
 
-+ Egel implements a term rewriting language which implies it should only
++ Egel implements a term rewriting language which implies it should
   work on acyclic graphs. I wanted to see whether I could get away with
-  only using native C++ smart pointers. There are drawbacks to that
+  using native C++ smart pointers only. There are drawbacks to that
   approach, I agree.
 + Reference counting is predictable. I don't like that in most garbage
   collecting schemes, for example, file handles are closed only after
@@ -92,3 +102,4 @@ Yes, and no. Or, no and yes. There isn't a type system for various reasons:
 + Not yet. An Egel object is a term referenced by a pointer. I hope to implement
   async/await on these terms where I will try to exploit that another thread isn't
   larger than a pointer.
+
