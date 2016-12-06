@@ -34,7 +34,7 @@ Yes, and no. Or, no and yes. There isn't a type system for various reasons:
 + After I got used to the idea I actually started wondering what would open
   up with an untyped language. Lisp research has lead to some baffling new 
   constructs, surprising usage of a simple operational semantics. I got interested
-  what would, or could, happen if I relaxed all constrains I met.
+  what would, or could, happen if I relaxed all constraints I met.
 
 ## Eager rewriting? Surely modern math would suggest a lazy system?
 
@@ -87,8 +87,9 @@ Yes, and no. Or, no and yes. There isn't a type system for various reasons:
   the collector makes a full sweep. In Egel, file handles are closed
   immediately after an object goes out of scope. That's the way it should
   be.
-+ Reference counting is local which means it might start to pay off
-  on larger objects and once I implement concurrent evaluation.
++ Reference counting is local and memories grow larger.
+  Which means it might start to pay off
+  on larger objects and on concurrent evaluation.
 + Again, you better hope I got every invariant right, though.
 
 ## Your bytecode doesn't support standard arithmetic?
