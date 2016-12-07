@@ -38,13 +38,12 @@ Yes, and no. Or, no and yes. There isn't a type system for various reasons:
 
 ## Eager rewriting? Surely modern math would suggest a lazy system?
 
-+ No. Not for serious tasks in my opinion. In lazy systems, every once so someone codes a 
-  small data processing application which when run on a large data set suddenly 
-  starts to consume all memory and become unresponsive due to lazy evaluation. 
++ No. Not for serious tasks in my opinion. In lazy systems, every once so often
+  someone codes a small data processing application which when run on a large data 
+  set suddenly starts to consume all memory and becomes unresponsive. 
   I consider this a show stopper. 
-  Algorithms must have predictable behavior once implemented.
-  There is no excuse for a language where you implement some tooling which
-  can abruptly explode on some input data.
+  Algorithms must have predictable behavior once implemented and deployed code
+  shouldn't be able to suddenly explode on data.
 + Programmers have no idea how lazy evaluation behaves. They simply cannot
   keep track of it. Predictable behavior is better.
 + I do not intend to be very pure with this language. Which, see above,
@@ -105,4 +104,3 @@ Yes, and no. Or, no and yes. There isn't a type system for various reasons:
 + Not yet. An Egel object is a term referenced by a pointer. I hope to implement
   async/await on these terms where I will try to exploit that a thread isn't
   larger than a pointer.
-
