@@ -18,7 +18,7 @@ Possible uses are:
 + Mobile code
 
 Egel is mostly a Lisp descendant and falls in the same category as Q. 
-Conceptually, it pre-dates Miranda, ML, or Haskell.
+Conceptually, it predates Miranda, ML, or Haskell.
 
 The programming style is
 similar to functional programming though the operational semantics is
@@ -59,7 +59,7 @@ Internally, combinators are represented as referenced counted C++ objects and
 there is no garbage collector for light-weight seamless integration with C/C++.
 Also, the interpreter is stackless to later allow for concurrency.
 
-Definitions are translated to bytecode in a small instructionset for
+Definitions are translated to bytecode in a small instruction set for
 portability.
 
 The interpreter is being developed at the moment and is in a pre-release
