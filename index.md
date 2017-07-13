@@ -17,11 +17,9 @@ Possible uses are:
 + Experiments with untyped rewriting
 + Mobile code
 
-Egel is mostly a Lisp descendant and falls in the same category as Q. 
-Conceptually, it predates Miranda, ML, or Haskell.
+Egel roughly falls in the same category as Q and conceptually predates Miranda, ML, or Haskell.
 
-The programming style is
-similar to functional programming though the operational semantics is
+The programming style is similar to functional programming though the operational semantics is
 slightly novel.
 
 ## Language features
@@ -47,8 +45,8 @@ def main = fib 5
 
 ## The Egel interpreter
 
-The Egel interpreter is implemented in C++ and designed to go from
-reading the sources to evaluation fast, though these goals are somewhat
+The Egel interpreter is implemented in C++ and designed to swiftly go 
+from reading the sources to evaluation, though these goals are somewhat
 at odds which each other.
 
 The interpreter assumes that scripts are for small automation tasks
