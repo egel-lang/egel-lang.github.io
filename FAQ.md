@@ -96,7 +96,7 @@ Yes, and no. Or, no and yes. There isn't a type system for various reasons:
 + Wrong, I agree. It stems from trying to work in vanilla C++ where due to technical
   reasons it's more easy to have a register language on pointers only.
   You do pay a hefty price for this, but my aim is to mostly support something like
-  matrix operations on the long run. So, I don't care much. I hope Egel
+  matrix operations in the long run. So, I don't care much. I hope Egel
   gives you acceptable speed.
 
 ## There's no concurrency in the VM? Where's the stack?
