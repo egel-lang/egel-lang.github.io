@@ -60,7 +60,7 @@ Also, the interpreter is stackless to later allow for concurrency.
 Definitions are translated to bytecode in a small instruction set for
 portability.
 
-The interpreter is being developed at the moment and is in a pre-release
+The interpreter is under development and is in a pre-release
 stage. It can only symbolically evaluate at the moment (which is most of the
 work, of course.)
 
