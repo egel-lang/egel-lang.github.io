@@ -27,7 +27,7 @@ the result where necessary -the dotted line-, and *continue* with the next node 
 ![Term traversal](tree2.png)
 
 In this example the node "H 2 7" is reduced first. Two things can happen: That node may reduce to a constant 
-in which case the result is stored into the thunk of "F" and evaluation progresses with "G". Or "H 2 7" requires more
+in which case the result is stored into the thunk of "F" and evaluation progresses with "G 3". Or "H 2 7" requires more
 calculation, in which case the graph is expanded with the result of applying "H" to "2" and "7".
 
 That's it. Note that the result is still a directed acyclic graph. That's what enables me to implement Egel's interpreter with native C++ reference counted pointers.
