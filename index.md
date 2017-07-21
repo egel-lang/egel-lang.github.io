@@ -78,7 +78,7 @@ fast.
 You can find the sources on [github](http://github.com/egel-lang/).
 I blog about my progress on [blogger](http://egel-language.blogspot.nl/).
 I started on a [FAQ](https://egel-lang.github.io/FAQ.html).
-
+A short post on the [operational semantics](https://egel-lang.github.io/SEMANTICS.html).
 ## Thanks
 
 I would like to thank Linus Torvalds for Linux, the GNU team for their
