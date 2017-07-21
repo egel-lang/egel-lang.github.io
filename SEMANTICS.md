@@ -43,7 +43,7 @@ This is, of course, a slow and restrictive manner of evaluation.
 
 ## Advantages
 
-The benefits of this model are twofold.
+The benefits of this model are threefold.
 
 + First, you don't run out of stack space which is really important in a functional language as I have experienced, 
   unfortunately. It's a slow but extremely robust mode of operation; too often have I experienced with functional 
@@ -53,6 +53,8 @@ The benefits of this model are twofold.
   the thunk is rewritten to the thunks corresponding to "5 * fac 4"; i.e, in classical terms, the stack frame is dropped and
   replaced. That is, classical factorial still takes O(n) space but a tail recursive one should take O(1).
   And, no, that doesn't generalize to most other languages, it's just an advantage of term rewriting.
++ Third, since the semantics still rewrites trees, or directed acyclic graphs, so you can implement it with nothing more than
+  reference counting, in our case C++'s shared pointers.
 
 I simply like this model of evaluation, there isn't much more to it.
 
