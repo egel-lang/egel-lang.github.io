@@ -31,10 +31,11 @@ reference counted pointers.
 
 ## Drawbacks
 
-This is, of course, a slow and restrictive manner of evalutation. For one, stack based evaluators are simply faster 
-because pushing data to, or popping from, a stack is less computationally expensive than allocating, and deallocating, 
-heap nodes. Second, it's a term rewrite system so you can't allow for assignment since that would usually allow you to 
-create cyclic structures.
+This is, of course, a slow and restrictive manner of evalutation.
++ For one, stack based evaluators are simply faster because pushing data to, or popping from, a stack is less 
+  computationally expensive than allocating, and deallocating, heap nodes.
++ Second, it's a term rewrite system so you can't allow for assignment since that would usually allow you to 
+  create cyclic structures.
 
 ## Invariants
 
@@ -42,9 +43,10 @@ The main task of my interpreter's byte code generator is to maintain all invaria
 
 ## Advantages
 
-The benefits of this model are twofold. For one, you don't run out of stack space which is really important in a functional 
-language as I have experienced, unfortunately. Second, it is still a tree rewrite system so you don't need to care about 
-tail call optimization.
+The benefits of this model are twofold: 
++ First, you don't run out of stack space which is really important in a functional language as I have experienced, 
+  unfortunately. 
++ Second, it is still a tree rewrite system so you don't need to care about tail call optimization.
 
 I simply like this model of evaluation, there isn't much more to it.
 
