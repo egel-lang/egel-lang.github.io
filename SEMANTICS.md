@@ -35,7 +35,7 @@ The main task of my interpreter's byte code generator is to maintain all invaria
 
 ## Drawbacks
 
-This is, of course, a slow and restrictive manner of evalutation.
+This is, of course, a slow and restrictive manner of evaluation.
 + For one, stack based evaluators are simply faster because pushing data to, or popping from, a stack is less 
   computationally expensive than allocating, and deallocating, heap nodes.
 + Also, it's a term rewrite system so you can't allow for assignment since that would usually allow you to 
@@ -43,7 +43,8 @@ This is, of course, a slow and restrictive manner of evalutation.
 
 ## Advantages
 
-The benefits of this model are twofold: 
+The benefits of this model are twofold.
+
 + First, you don't run out of stack space which is really important in a functional language as I have experienced, 
   unfortunately. It's a slow but extremely robust mode of operation; too often have I experienced with functional 
   programming that you test your code on small input, to have it explode on larger input. What's the point of functional
