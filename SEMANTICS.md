@@ -25,9 +25,7 @@ the result where necessary -the dotted line-, and *continue* with the next node 
 
 ![Term traversal](tree2.png)
 
-That's it. Note that the resulting graph is still a tree and is mostly the starting tree turned upside down. Also, the 
-resulting tree is still a directed acyclic graph. That's what enables me to implement Egel's interpreter with native C++ 
-reference counted pointers.
+That's it. Note that the result is still a directed acyclic graph. That's what enables me to implement Egel's interpreter with native C++ reference counted pointers.
 
 ## Invariants
 
