@@ -9,7 +9,7 @@ title: Operational Semantics
 <body markdown="1">
 # Operational Semantics of Eager Combinator Rewriting
 
-I got some questions on how the Egel interpreter evaluates terms. The operational semantics of the eager combinator rewrite system I use is simplistic and trivial to explain with two pictures, so here goes.
+I got some questions on how the Egel interpreter evaluates terms. The operational semantics of the eager combinator rewrite system I use is facile and trivial to explain with two pictures, so here goes.
 
 ## Term evaluation
 Say, you have a term language where you want to rewrite an expression consisting of combinators. In Egel's case, each 
