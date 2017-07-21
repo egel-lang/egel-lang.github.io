@@ -58,7 +58,7 @@ The benefits of this model are threefold.
 
 I simply like this model of evaluation, there isn't much more to it.
 
-**Notes:** Yes, these are thunks or heap allocated stack frames. No, this isn't done with CPS though it is much akin to that. Please note that CPS is a source-to-source transformation, whereas what is described here is an evaluation strategy; you need that first. Stated differently, the source code is translated directly to byte code for this model.
+**Notes:** Yes, these are thunks or heap allocated stack frames. No, this isn't done with CPS though it is much akin to that. Please note that CPS is a source-to-source transformation, whereas what is described here is an evaluation strategy. You need that first. Stated differently, the source code is translated directly to byte code for this model.
 
 **More:** Egel also supports exception handling which is a natural extension of this model.
 </body>
