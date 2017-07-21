@@ -9,7 +9,7 @@ title: Operational Semantics
 <body markdown="1">
 # Operational Semantics of Eager Combinator Rewriting
 
-The operational semantics of the eager combinator rewrite system I use is trivial to explain with two pictures, so here goes.
+I got some questions on how the Egel interpreter evaluates terms. The operational semantics of the eager combinator rewrite system I use is simplistic and trivial to explain with two pictures, so here goes.
 
 ## Term evaluation
 Say, you have a term language where you want to rewrite an expression consisting of combinators. In Egel's case, each 
@@ -25,7 +25,7 @@ the result where necessary -the dotted line-, and *continue* with the next node 
 
 ![Term traversal](tree2.png)
 
-That's it. Note that the resulting graph is still a tree and is simply the starting tree turned upside down. Also, the 
+That's it. Note that the resulting graph is still a tree and is mostly the starting tree turned upside down. Also, the 
 resulting tree is still a directed acyclic graph. That's what enables me to implement Egel's interpreter with native C++ 
 reference counted pointers.
 
