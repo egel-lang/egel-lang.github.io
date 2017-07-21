@@ -48,7 +48,7 @@ The benefits of this model are twofold:
   unfortunately. It's a slow but extremely robust mode of operation; too often have I experienced with functional 
   programming that you test your code on small input, to have it explode on larger input. What's the point of functional
   programming if you're going to run out of stack space when using recursion?
-+ Second, it is still a tree rewrite system so you don't need to care about tail call optimization. That is, say for "fac 5"
++ Second, it is still a tree rewrite system so I don't need to care about tail call optimization. That is, say for "fac 5"
   the thunk is rewritten to the thunks corresponding to "5 * fac 4"; i.e, in classical terms, the stack frame is dropped and
   replaced. And, no, that doesn't generalize to other languages, it's just an advantage of term rewriting.
 
