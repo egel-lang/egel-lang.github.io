@@ -57,8 +57,8 @@ The benefits of this model are threefold.
   replaced. That is, naive factorial still takes O(n) space but a tail recursive one should take O(1).
   And, no, that doesn't generalize to most other languages, it's just an advantage of term rewriting.
 + Third, since the semantics still rewrites trees, or directed acyclic graphs, you can implement it with nothing more than
-  reference counting. In this case C++'s shared pointers which has some additional benefits regarding deterministic behavior,
-  punctual disposing of resources, and concurrent evaluation.
+  reference counting. In this case using C++'s shared pointers which has some additional benefits regarding predictable
+  behavior, punctual disposing of resources, and concurrent evaluation.
 
 I simply like this model of evaluation, there isn't much more to it.
 
