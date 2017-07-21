@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Egel Language
+title: Operational Semantics
 ---
 <html markdown="1">
 <head>
