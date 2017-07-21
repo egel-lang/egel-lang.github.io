@@ -58,6 +58,9 @@ Yes, and no. Or, no and yes. There isn't a type system for various reasons:
   migrating combinator definitions. My translation scheme may explode 
   into too many of them, but hey, it's experimental!
 
++ After some questions I decided to add a separate page on the operational
+  semantics. You can read about it [here](SEMANTICS.html).
+  
 ## Do you support tail calls?
 
 + I support an experimental trivial eager rewrite system which should
@@ -104,3 +107,7 @@ Yes, and no. Or, no and yes. There isn't a type system for various reasons:
 + Not yet. An Egel object is a term referenced by a pointer. I hope to implement
   async/await on these terms where I will try to exploit that a thread isn't
   larger than a pointer.
++ I wanted a robust trivial scheme. I know it goes against conventional wisdom
+  and I know my solution is slow but functional languages shouldn't run out of
+  stack space, period. Out of memory, yes, out of stack space, no. So I went the
+  robust road and implemented thunks, heap allocated stack frames.
