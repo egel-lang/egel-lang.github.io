@@ -31,7 +31,7 @@ reference counted pointers.
 
 ## Invariants
 
-The main task of my interpreter's byte code generator is to maintain all invariants. That is: A) The 'stack'/'spine' forms a directed acyclic graph and B) the results calculated are such graphs too.
+The main task of my interpreter's byte code generator is to maintain all invariants. That is, a) The 'stack'/'spine' forms a directed acyclic graph and b) the results calculated are such graphs too.
 
 ## Drawbacks
 
