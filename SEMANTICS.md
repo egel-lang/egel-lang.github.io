@@ -31,7 +31,7 @@ reference counted pointers.
 
 ## Drawbacks
 
-This is, of course, a slow manner and restrictive manner of evalutation. For one, stack based evaluators are simply faster 
+This is, of course, a slow and restrictive manner of evalutation. For one, stack based evaluators are simply faster 
 because pushing data to, or popping from, a stack is less computationally expensive than allocating, and deallocating, 
 heap nodes. Second, it's a term rewrite system so you can't allow for assignment since that would usually allow you to 
 create cyclic structures.
