@@ -45,7 +45,7 @@ The main task of my interpreter's byte code generator is to maintain all invaria
 
 The benefits of this model are twofold: 
 + First, you don't run out of stack space which is really important in a functional language as I have experienced, 
-  unfortunately. It's a slow but extremely robust mode of operation; to often have I experienced with functional 
+  unfortunately. It's a slow but extremely robust mode of operation; too often have I experienced with functional 
   programming that you test your code on small input, to have it explode on larger input. What's the point of functional
   programming if you're going to run out of stack space when using recursion?
 + Second, it is still a tree rewrite system so you don't need to care about tail call optimization. That is, say for "fac 5"
