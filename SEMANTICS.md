@@ -14,15 +14,15 @@ The operational semantics of the eager combinator rewrite system I use is trivia
 Say, you have a term language where you want to rewrite an expression consisting of combinators. In Egel's case, each 
 combinator knows how to rewrite itself, therefore, corresponds to a procedure or some code.
 
-
+![A term](tree1.png)
 
 You could use a stack and push stackframes for F, G, and H. However, I wanted to experiment with another model, rewriting. 
 Note that since we're rewriting eagerly we're rewriting the outermost expression first.
 
-The operational semantics Egel uses is extremely simplistic: start with the node which is to be rewritten first, store 
-the result where necessary, and continue with the next node to rewrite.
+The operational semantics Egel uses is extremely simplistic: *start* with the node which is to be rewritten first, *store* 
+the result where necessary, and *continue* with the next node to rewrite.
 
-
+![Term traversal](tree2.png)
 
 That's it. Note that the resulting graph is still a tree and is simply the starting tree turned upside down. Also, the 
 resulting tree is still a directed acyclic graph. That's what enables me to implement Egel's interpreter with native C++ 
