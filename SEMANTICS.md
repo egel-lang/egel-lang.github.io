@@ -19,7 +19,7 @@ combinator knows how to rewrite itself, therefore, corresponds to a procedure or
 You could use a stack and push stackframes for F, G, and H. However, I wanted to experiment with another model, rewriting. 
 Note that since we're rewriting eagerly we're rewriting the outermost expression first.
 
-The operational semantics Egel uses is extremely simplistic: *start* with the node which is to be rewritten first, *store* 
+The operational semantics Egel uses is extremely simplistic: *Start* with the node which is to be rewritten first, *store* 
 the result where necessary, and *continue* with the next node to rewrite.
 
 ![Term traversal](tree2.png)
@@ -33,7 +33,7 @@ because pushing data to, or popping from, a stack is less computationally expens
 heap nodes. Second, it's a term rewrite system so you can't allow for assignment since that would usually allow you to 
 create cyclic structures.
 
-The main task of my interpreter's byte code generation is to maintain all invariants.
+The main task of my interpreter's byte code generation is to maintain all invariants. That is: A) The 'stack'/'spine' forms a DAG and B) the results calculated are DAGs too.
 
 The benefits of this model are twofold. For one, you don't run out of stack space which is really important in a functional 
 language as I have experienced, unfortunately. Second, it is still a tree rewrite system so you don't need to care about 
