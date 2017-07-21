@@ -17,7 +17,7 @@ combinator knows how to rewrite itself, therefore, corresponds to a procedure or
 
 ![A term](tree1.png)
 
-You could use a stack and push stackframes for F, G, and H. However, I wanted to experiment with another model, rewriting. 
+You could use a stack and push stack frames for F, G, and H. However, I wanted to experiment with another model, rewriting. 
 Note that since we're rewriting eagerly we're rewriting the outermost expression first.
 
 The operational semantics Egel uses is extremely simplistic: *Start* with the node which is to be rewritten first, *store* 
@@ -59,6 +59,6 @@ I simply like this model of evaluation, there isn't much more to it.
 **Notes:** Yes, these are thunks or heap allocated stack frames. No, this isn't done with CPS since CPS is a transformation, 
 not an evaluation strategy/model.
 
-**More:** Egel also supports exceptions which is a natural extension of this model.
+**More:** Egel also supports exception handling which is a natural extension of this model.
 </body>
 </html>
