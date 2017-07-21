@@ -47,7 +47,7 @@ The benefits of this model are twofold:
 + First, you don't run out of stack space which is really important in a functional language as I have experienced, 
   unfortunately. 
 + Second, it is still a tree rewrite system so you don't need to care about tail call optimization. That is, say for "fac 5"
-  the thunk is rewritten to thunk corresponding to "5 * fac 4"; i.e, in classical terms, the stack frame is dropped and
+  the thunk is rewritten to the thunks corresponding to "5 * fac 4"; i.e, in classical terms, the stack frame is dropped and
   replaced. And, no, that doesn't generalize to other languages, it's just an advantage of term rewriting.
 
 I simply like this model of evaluation, there isn't much more to it.
