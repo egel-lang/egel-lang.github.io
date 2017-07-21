@@ -14,7 +14,7 @@ I got some questions on how the Egel interpreter evaluates terms. The operationa
 ## Term evaluation
 Say, you have a term language where you want to rewrite an expression consisting of combinators. In Egel's case, each 
 combinator knows how to rewrite itself, therefore, corresponds to a procedure or some code. Below, the graphical
-representation of the term `F (G 3) (H 2 7)`.
+representation of the term "F (G 3) (H 2 7)".
 
 ![A term](tree1.png)
 
