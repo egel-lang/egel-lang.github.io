@@ -38,7 +38,7 @@ create cyclic structures.
 
 ## Invariants
 
-The main task of my interpreter's byte code generation is to maintain all invariants. That is: A) The 'stack'/'spine' forms a DAG and B) the results calculated are DAGs too.
+The main task of my interpreter's byte code generator is to maintain all invariants. That is: A) The 'stack'/'spine' forms a DAG and B) the results calculated are DAGs too.
 
 ## Advantages
 
