@@ -29,6 +29,10 @@ That's it. Note that the resulting graph is still a tree and is simply the start
 resulting tree is still a directed acyclic graph. That's what enables me to implement Egel's interpreter with native C++ 
 reference counted pointers.
 
+## Invariants
+
+The main task of my interpreter's byte code generator is to maintain all invariants. That is: A) The 'stack'/'spine' forms a directed acyclic graph and B) the results calculated are such graphs too.
+
 ## Drawbacks
 
 This is, of course, a slow and restrictive manner of evalutation.
@@ -36,10 +40,6 @@ This is, of course, a slow and restrictive manner of evalutation.
   computationally expensive than allocating, and deallocating, heap nodes.
 + Also, it's a term rewrite system so you can't allow for assignment since that would usually allow you to 
   create cyclic structures.
-
-## Invariants
-
-The main task of my interpreter's byte code generator is to maintain all invariants. That is: A) The 'stack'/'spine' forms a DAG and B) the results calculated are DAGs too.
 
 ## Advantages
 
