@@ -40,7 +40,7 @@ forms a directed acyclic graph and b) the results calculated are such graphs too
 
 ## Drawbacks
 
-This is, of course, a slow and restrictive manner of evaluation.
+The method described is, of course, a slow and restrictive manner of evaluation.
 + For one, stack based evaluators are simply faster because pushing data to, or popping from, a stack is less 
   computationally expensive than allocating, and deallocating, heap nodes.
 + Also, it's a term rewrite system so you can't allow for assignment since that would usually allow you to 
