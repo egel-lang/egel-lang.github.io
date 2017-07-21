@@ -53,7 +53,7 @@ The benefits of this model are threefold.
   programming you test your code on small input, to have it explode on larger input. What's the point of functional
   programming if you're going to run out of stack space when using recursion?
 + Second, it is still a tree rewrite system so I don't need to care about tail call optimization. That is, say for "fac 5"
-  the thunk is rewritten to the thunks corresponding to "5 * fac 4"; i.e., in classical terms, the stack frame is dropped and
+  the node is rewritten to the nodes corresponding to "5 * fac 4"; i.e., in classical terms, the stack frame is dropped and
   replaced. That is, naive factorial still takes O(n) space but a tail recursive one should take O(1).
   And, no, that doesn't generalize to most other languages, it's just an advantage of term rewriting.
 + Third, since the semantics still rewrites trees, or directed acyclic graphs, you can implement it with nothing more than
