@@ -9,7 +9,7 @@ title: Operational Semantics
 <body markdown="1">
 # Operational Semantics of Eager Combinator Rewriting
 
-I got some questions on how the Egel interpreter evaluates terms. The operational semantics of the eager combinator rewrite system I use is facile and trivial to explain with two pictures, so here goes.
+I got some questions on how the Egel interpreter evaluates terms. The operational semantics of the eager combinator rewrite system I use is embarrassingly facile and trivial to explain with two pictures, so here goes.
 
 ## Term evaluation
 Say, you have a term language where you want to rewrite an expression consisting of combinators. In Egel's case, each 
@@ -18,11 +18,12 @@ representation of the term "F (G 3) (H 2 7)".
 
 ![A term](tree1.png)
 
-You could use a stack and push stack frames for F, G, and H. However, I wanted to experiment with another model, rewriting. 
+You could use a stack and push stack frames for F, G, and H. However, I wanted to experiment with another model, graph 
+rewriting. 
 Note that since we're rewriting eagerly we're rewriting the outermost expression first.
 
-The operational semantics Egel uses is extremely simplistic: *Start* with the node which is to be rewritten first, *store* 
-the result where necessary -the dotted line-, and *continue* with the next node to rewrite -the straight line-.
+The operational semantics Egel uses shown below is extremely simplistic: *Start* with the node which is to be rewritten first,
+*store* the result where necessary -the dotted line-, and *continue* with the next node to rewrite -the straight line-.
 
 ![Term traversal](tree2.png)
 
@@ -34,7 +35,8 @@ That's it. Note that the result is still a directed acyclic graph. That's what e
 
 ## Invariants
 
-The main task of Egel interpreter's byte code generator is to maintain all invariants. That is, a) The 'stack'/'spine' forms a directed acyclic graph and b) the results calculated are such graphs too.
+The main task of Egel interpreter's byte code generator is to maintain all invariants. That is, a) the 'stack'/'spine' 
+forms a directed acyclic graph and b) the results calculated are such graphs too.
 
 ## Drawbacks
 
@@ -43,6 +45,8 @@ This is, of course, a slow and restrictive manner of evaluation.
   computationally expensive than allocating, and deallocating, heap nodes.
 + Also, it's a term rewrite system so you can't allow for assignment since that would usually allow you to 
   create cyclic structures.
++ In order to allow for a more expressive input language, a technique called combinator lifting is needed. That
+  technique results in prohibitively slow code since it 'recaptures' variables in the context.
 
 ## Advantages
 
