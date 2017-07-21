@@ -18,7 +18,7 @@ representation of the term "F (G 3) (H 2 7)".
 
 ![A term](tree1.png)
 
-You could use a stack and push stack frames for F, G, and H. However, I wanted to experiment with another model, graph 
+You could use a stack and push stack frames for "F", "G", and "H". However, I wanted to experiment with another model, graph 
 rewriting. 
 Note that since we're rewriting eagerly we're rewriting the outermost expression first.
 
