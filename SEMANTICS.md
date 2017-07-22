@@ -23,12 +23,12 @@ rewriting.
 Note that since we're rewriting eagerly we're rewriting the outermost expression first.
 
 The evaluation strategy Egel uses shown below is extremely simplistic: *Start* with the node which is to be rewritten first,
-*store* the result where necessary -the dotted line-, and *continue* with the next node to rewrite -the straight line-.
+*store* the result where necessary -the dotted lines-, and *continue* with the next node to rewrite -the straight lines-.
 
 ![Term traversal](tree2.png)
 
 In this example, the node "H 2 7" is reduced first. Two things can happen: That node may reduce to a constant 
-in which case the result is stored into the node of "F" and evaluation progresses with "G 3". Or "H 2 7" requires more
+in which case the result is stored in the node of "F" and evaluation progresses with "G 3". Or "H 2 7" requires more
 calculation, in which case the graph is expanded with the result of applying "H" to "2" and "7".
 
 That's it. Note that the result is still a directed acyclic graph. That's what enables me to implement Egel's interpreter with native C++ reference counted pointers.
