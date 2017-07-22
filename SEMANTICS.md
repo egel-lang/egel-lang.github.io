@@ -56,9 +56,7 @@ The method described is, of course, a slow and restrictive manner of evaluation.
 The benefits of this model are threefold.
 
 + First, you don't run out of stack space which is really important in a functional language as I have experienced, 
-  unfortunately. It's a slow but extremely robust mode of operation. Too often have I faced that with functional 
-  programming you test your code on small input, to have it explode on larger input. What's the point of functional
-  programming if you're going to run out of stack space when using recursion?
+  unfortunately. It's a slow but extremely robust mode of operation.
 + Second, it is still a tree rewrite system so I don't need to care about tail call optimization. That is, say for "fac 5"
   the node is rewritten to the nodes corresponding to "5 * fac 4"; i.e., in classical terms, the stack frame is dropped and
   replaced. That is, naive factorial still takes O(n) space but a tail recursive one should take O(1).
@@ -70,7 +68,8 @@ The benefits of this model are threefold.
 I simply like this model of evaluation, there isn't much more to it. Some difficulties with 
 this model are not discussed here.
 
-**Notes:** Yes, what is shown are thunks or heap allocated stack frames. No, this isn't done with CPS though it is much akin to that. Please note that CPS is a source-to-source transformation, whereas what is described here is an evaluation strategy. You need that first. Stated differently, the source code is translated directly to byte code for this model.
+**Notes:** Yes, what is shown are thunks or heap allocated stack frames. No, this isn't done with CPS though it is much akin to that. Please note that CPS is a source-to-source transformation, whereas what is described here is an evaluation strategy. You need that first. Stated differently, the source code is translated directly to byte code for this model, and the model is the
+CPS transform of the term graph according to an eager semantics.
 
 **More:** Egel also supports exception handling which is a natural extension of this model. 
 </body>
