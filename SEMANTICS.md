@@ -68,8 +68,11 @@ The benefits of this model are threefold.
 I simply like this model of evaluation, there isn't much more to it. Some difficulties with 
 this model are not discussed here.
 
-**Notes:** Yes, what is shown are thunks or heap allocated stack frames. No, this isn't done with CPS though it is much akin to that. Please note that CPS is a source-to-source transformation, whereas what is described here is an evaluation strategy. You need that first. Stated differently, the source code is translated directly to byte code for this model, and the model is the
-CPS transform of the term graph according to an eager semantics.
+**Notes:** Yes, what is shown are thunks or heap allocated stack frames. No, code isn't generated with a continuation passing
+style (CPS) transform though how the model was derived it is much akin to that. Please note that CPS is a source-to-source
+transformation, whereas what is described here is an evaluation strategy. You need the latter first. Stated differently, the
+source code is translated directly to byte code for this model, and the model is the CPS transform of the term graph according
+to an eager semantics.
 
 **More:** Egel also supports exception handling which is a natural extension of this model. 
 </body>
