@@ -22,7 +22,7 @@ You could use a stack and push stack frames for "F", "G", and "H". However, I wa
 rewriting. 
 Note that since we're rewriting eagerly we're rewriting the outermost expression first.
 
-The operational semantics Egel uses shown below is extremely simplistic: *Start* with the node which is to be rewritten first,
+The evaluation strategy Egel uses shown below is extremely simplistic: *Start* with the node which is to be rewritten first,
 *store* the result where necessary -the dotted line-, and *continue* with the next node to rewrite -the straight line-.
 
 ![Term traversal](tree2.png)
