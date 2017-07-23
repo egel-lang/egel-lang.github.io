@@ -48,7 +48,7 @@ The method described is, of course, a slow and restrictive manner of evaluation.
   computationally expensive than allocating, and deallocating, heap nodes.
 + Also, it's a term rewrite system so you can't allow for assignment since that would usually allow you to 
   create cyclic structures.
-+ In order to allow for a more expressive input language, a technique called combinator lifting is needed. That
++ In order to allow for a more expressive input language, a technique called lambda lifting is needed. That
   technique results in prohibitively slow code since it 'recaptures' variables in the context.
 
 ## Advantages
