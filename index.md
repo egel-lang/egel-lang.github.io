@@ -54,7 +54,8 @@ where the computationally intensive part is done by calling native
 routines.
 
 Internally, combinators are represented as referenced counted C++ objects and
-there is no garbage collector for light-weight seamless integration with C/C++.
+there is no extra garbage collector implemented for light-weight seamless integration 
+with C/C++.
 Also, the interpreter is stackless to later allow for concurrency.
 
 Definitions are translated to bytecode in a small instruction set for
