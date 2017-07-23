@@ -33,7 +33,7 @@ calculation, in which case the graph is expanded with the result of applying "H"
 
 That's it. Note that the result is still a directed acyclic graph. That's what enables me to implement Egel's interpreter with native C++ reference counted pointers.
 
-**Note:** For presentation reasons, the above pictures don't completely correspond to the model coded in C++, where an OO
+**Note:** For brevity the above pictures don't completely correspond to the model coded in C++, where an OO
 hierarchy of nodes and arrays of pointers to nodes is used.
 
 ## Invariants
@@ -44,7 +44,7 @@ a) the 'stack'/'spine' forms a directed acyclic graph and b) the results calcula
 ## Drawbacks
 
 The method described is, of course, a slow and restrictive manner of evaluation.
-+ For one, stack based evaluators are simply faster because pushing data to, or popping from, a stack is less 
++ For one, stack based evaluators are often faster because pushing data to, or popping from, a stack is less 
   computationally expensive than allocating, and deallocating, heap nodes.
 + Also, it's a term rewrite system so you can't allow for assignment since that would usually allow you to 
   create cyclic structures.
@@ -65,8 +65,7 @@ The benefits of this model are threefold.
   reference counting. In this case using C++'s shared pointers which has some additional benefits regarding predictable
   behavior, punctual disposing of resources, and concurrent evaluation.
 
-I simply like this model of evaluation, there isn't much more to it. Some difficulties with 
-this model are not discussed here.
+I like this model of evaluation, there isn't much more to it. Some difficulties with this model are not discussed here.
 
 **Notes:** Yes, what is shown are thunks or heap allocated stack frames. No, code isn't generated with a continuation passing
 style (CPS) transform though how the model was derived is much akin to that. Please note that CPS is a source-to-source
