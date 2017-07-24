@@ -7,7 +7,7 @@ title: Egel Language
 <link rel="stylesheet" href="css/main.css">
 </head>
 <body markdown="1">
-# The Egel Language
+## The Egel Language
 
 Egel is a very small toy language based on untyped eager combinator rewriting.
 
