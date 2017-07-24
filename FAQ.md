@@ -7,7 +7,7 @@ title: Egel Language FAQ
 <link rel="stylesheet" href="css/main.css">
 </head>
 <body markdown="1">
-# FAQ about the Egel Language
+## FAQ about the Egel Language
 
 This is a FAQ where I preemptively try to answer questions I think people will
 have and document some design decisions.
