@@ -7,7 +7,7 @@ title: Operational Semantics
 <link rel="stylesheet" href="css/main.css">
 </head>
 <body markdown="1">
-# Operational Semantics of Eager Combinator Rewriting
+## Operational Semantics of Eager Combinator Rewriting
 
 I got some questions on how the Egel interpreter evaluates terms. The operational semantics of the eager combinator rewrite system I use is embarrassingly facile and trivial to explain with two pictures, so here goes.
 
