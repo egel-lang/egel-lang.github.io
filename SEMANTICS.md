@@ -71,7 +71,7 @@ The benefits of this model are fourfold.
 
 I like this model of evaluation, there isn't much more to it. Some difficulties with this model are not discussed here.
 
-**Notes:** Yes, what is shown are thunks or heap allocated stack frames. Yes, the thunks form a heapified stack but dissimilar
+**Notes:** Yes, what is shown are thunks or heap allocated stack frames. Yes, the thunks form a heapified stack but, dissimilar
 to standard stack based evaluation, stack frames are rewritten. No, code isn't generated with a continuation passing
 style (CPS) transform though how the model was derived is much akin to that. Please note that CPS is a source-to-source
 transformation, whereas what is described here is an evaluation strategy. You need the latter first. Stated differently, the
