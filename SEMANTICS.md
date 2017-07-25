@@ -57,7 +57,7 @@ The benefits of this model are fourfold.
 
 + First, you don't run out of stack space which is really important in a functional language as I have experienced, 
   unfortunately. It's a slow but extremely robust mode of operation.
-+ Second, it is still a tree rewrite system so I don't need to care about tail call optimization. That is, say for "fac 5"
++ Second, it is still a tree rewrite system so there is no need to care about tail call optimization. That is, say for "fac 5"
   the node is rewritten to the nodes corresponding to "5 * fac 4"; i.e., in classical terms, the stack frame is dropped and
   replaced. Thus, naive factorial still takes O(n) space but a tail recursive one should take O(1).
   And, no, that doesn't generalize to most other languages, it's just an advantage of term rewriting.
@@ -67,11 +67,12 @@ The benefits of this model are fourfold.
 + Fourth, the model allows for cheap concurrency where an extra process can be modeled by introducing not much more than an
   extra node which is rewritten concurrently. I.e., hardly bigger than a pointer. Since there is no stack the interpreter
   doesn't need to instantiate one which should enable high scalability.
-  It also allows for full sharing of graph nodesof other threads.
+  It also allows for full sharing of graph nodes of other threads.
 
 I like this model of evaluation, there isn't much more to it. Some difficulties with this model are not discussed here.
 
-**Notes:** Yes, what is shown are thunks or heap allocated stack frames. No, code isn't generated with a continuation passing
+**Notes:** Yes, what is shown are thunks or heap allocated stack frames. Yes, the thunks form a heapified stack but dissimilar
+to standard stack based evaluation, stack frames are rewritten. No, code isn't generated with a continuation passing
 style (CPS) transform though how the model was derived is much akin to that. Please note that CPS is a source-to-source
 transformation, whereas what is described here is an evaluation strategy. You need the latter first. Stated differently, the
 source code is translated directly to byte code for this model, and the model is the CPS transform of the term graph 
