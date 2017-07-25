@@ -7,7 +7,7 @@ title: Operational Semantics
 <link rel="stylesheet" href="css/main.css">
 </head>
 <body markdown="1">
-## Operational Semantics of Eager Combinator Rewriting
+## Eager Combinator Rewriting
 
 I got some questions on how the Egel interpreter evaluates terms. The operational semantics of the eager combinator rewrite system I use is embarrassingly facile and trivial to explain with two pictures, so here goes.
 
@@ -53,7 +53,7 @@ The method described is, of course, a slow and restrictive manner of evaluation.
 
 ## Advantages
 
-The benefits of this model are threefold.
+The benefits of this model are fourfold.
 
 + First, you don't run out of stack space which is really important in a functional language as I have experienced, 
   unfortunately. It's a slow but extremely robust mode of operation.
@@ -64,6 +64,9 @@ The benefits of this model are threefold.
 + Third, since the semantics still rewrites trees, or directed acyclic graphs, you can implement it with nothing more than
   reference counting. In this case using C++'s shared pointers which has some additional benefits regarding predictable
   behavior, punctual disposing of resources, and concurrent evaluation.
++ Fourth, the model allows for cheap concurrency where an extra thread can modeled by introducing not much more than an
+  extra node which is rewritten. I.e., hardly bigger than a pointer. It also allows for full sharing of graph nodes
+  of other threads.
 
 I like this model of evaluation, there isn't much more to it. Some difficulties with this model are not discussed here.
 
