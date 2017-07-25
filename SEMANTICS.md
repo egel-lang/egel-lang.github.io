@@ -64,9 +64,10 @@ The benefits of this model are fourfold.
 + Third, since the semantics still rewrites trees, or directed acyclic graphs, you can implement it with nothing more than
   reference counting. In this case using C++'s shared pointers which has some additional benefits regarding predictable
   behavior, punctual disposing of resources, and concurrent evaluation.
-+ Fourth, the model allows for cheap concurrency where an extra thread can modeled by introducing not much more than an
-  extra node which is rewritten. I.e., hardly bigger than a pointer. It also allows for full sharing of graph nodes
-  of other threads.
++ Fourth, the model allows for cheap concurrency where an extra process can be modeled by introducing not much more than an
+  extra node which is rewritten concurrently. I.e., hardly bigger than a pointer. Since there is no stack the interpreter
+  doesn't need to instantiate one which should enable high scalability.
+  It also allows for full sharing of graph nodesof other threads.
 
 I like this model of evaluation, there isn't much more to it. Some difficulties with this model are not discussed here.
 
