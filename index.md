@@ -32,6 +32,8 @@ slightly novel.
 
 ```egel
 namespace Fibonnaci (
+  using System
+  
   def fib =
     [ 0 -> 1
     | 1 -> 1
