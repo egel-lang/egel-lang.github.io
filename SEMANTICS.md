@@ -9,7 +9,7 @@ title: Operational Semantics
 <body markdown="1">
 ## Eager Combinator Rewriting
 
-I got some questions on how the Egel interpreter evaluates terms. The operational semantics of the eager combinator rewrite system I use is embarrassingly facile and trivial to explain with two pictures, so here goes.
+I got some questions on how the Egel interpreter evaluates terms. The operational semantics of the eager combinator rewrite system I use is **embarrassingly** facile and trivial to explain with two pictures, so here goes.
 
 ## Term evaluation
 Say, you have a term language where you want to rewrite an expression consisting of combinators. In Egel's case, each 
@@ -47,7 +47,7 @@ The method described is, of course, a slow and restrictive manner of evaluation.
 + For one, stack based evaluators are often faster because pushing data to, or popping from, a stack is less 
   computationally expensive than allocating, and deallocating, heap nodes.
 + Also, it's a term rewrite system so you can't allow for assignment since that would usually allow you to 
-  create cyclic structures.
+  create cyclic structures, though there are means to relax the later restriction.
 + In order to allow for a more expressive input language, a technique called lambda lifting is needed. That
   technique results in prohibitively slow code since it 'recaptures' variables in the context.
 
