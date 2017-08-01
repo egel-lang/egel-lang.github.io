@@ -27,6 +27,7 @@ slightly novel.
 + Symbolic evaluation
 + Namespaces
 + Exceptions
++ Concurrency
 
 ## Example code
 
@@ -51,21 +52,19 @@ The Egel interpreter is implemented in C++ and designed to swiftly go
 from reading the sources to evaluation, though these goals are somewhat
 at odds which each other.
 
-The interpreter assumes that scripts are for small automation tasks
-where the computationally intensive part is done by calling native
-routines.
-
-Internally, combinators are represented as referenced counted C++ objects and
-there is no extra garbage collector implemented for light-weight seamless integration 
-with C/C++.
-Also, the interpreter is stackless to later allow for concurrency.
-
-Definitions are translated to bytecode in a small instruction set for
+The interpreter is mostly written to explore how far you can push
+an implementation of a term rewrite system based on a directed acyclic graph.
+Combinators and the evaluation graphs are implemented with reference counted
+C++ objects and most of the implementation is written with utter disregard
+for performance. That has drawbacks but it also gives a highly robust system which
+can be seamlessly integrated into other C/C++ programs. Lastly, the 
+interpreter employs bytecode in a small instruction set for maximal
 portability.
 
-The interpreter is under development and is in a pre-release
-stage. It can only symbolically evaluate at the moment (which is most of the
-work, of course.)
+The interpreter seems to have something between a naive Lisp and
+Python performance.
+
+A REPL and batch mode evaluation is supported.
 
 ## Roadmap and mobile code
 
