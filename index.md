@@ -53,18 +53,16 @@ from reading the sources to evaluation, though these goals are somewhat
 at odds which each other.
 
 The interpreter is mostly written to explore how far you can push
-an implementation in C++ of a term rewrite system based on a directed acyclic graph.
+an implementation of a term rewrite system based on a directed acyclic graph in C++.
 Combinators and the evaluation graphs are implemented with reference counted
-C++ objects and most of the implementation is written with utter disregard
+objects and most of the implementation is written with utter disregard
 for performance. That has drawbacks but it also gives a highly robust system which
 can be seamlessly integrated into other C/C++ programs. Lastly, the 
 interpreter employs bytecode in a small instruction set for maximal
 portability.
 
 The interpreter seems to have something between a naive Lisp and
-Python performance.
-
-A REPL and batch mode evaluation is supported.
+Python performance. A REPL and batch mode evaluation is supported.
 
 ## Roadmap and mobile code
 
