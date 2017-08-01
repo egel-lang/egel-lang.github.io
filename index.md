@@ -68,7 +68,7 @@ Python performance. A REPL and batch mode evaluation is supported.
 
 Egel is developed as a hobby project to explore some ideas the author
 has. The intention is to grow the language to support different math
-libraries and then move towards making the code mobile. The aim
+libraries and then move towards making the code mobile. One idea
 is to become a small data-center language for distributed ad-hoc
 computation; i.e., a light-weight solution for moving code to data
 fast.
