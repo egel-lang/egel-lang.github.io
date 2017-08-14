@@ -64,6 +64,9 @@ portability.
 The interpreter seems to have something between a naive Lisp and
 Python performance. A REPL and batch mode evaluation is supported.
 
+The interpreter is in an alpha state. It can symbolically rewrite but
+small bugs are still regularly discovered.
+
 ## Roadmap and mobile code
 
 Egel is developed as a hobby project to explore some ideas the author
@@ -78,7 +81,7 @@ fast.
 You can find the sources on [github](http://github.com/egel-lang/).
 I blog about my progress on [blogger](http://egel-language.blogspot.nl/).
 I started on a [FAQ](https://egel-lang.github.io/FAQ.html).
-A short post on the [operational semantics](https://egel-lang.github.io/SEMANTICS.html).
+
 ## Thanks
 
 I would like to thank Linus Torvalds for Linux, the GNU team for their
