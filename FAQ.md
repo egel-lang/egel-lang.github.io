@@ -102,11 +102,13 @@ Yes, and no. Or, no and yes. There isn't a type system for various reasons:
   matrix operations in the long run. So, I don't care much. I hope Egel
   gives you acceptable speed.
 
-## There's no concurrency in the VM? Where's the stack?
+## What about concurrency? Where's the stack?
 
-+ Not yet. An Egel object is a term referenced by a pointer. I hope to implement
-  async/await on these terms where I will try to exploit that a thread isn't
-  larger than a pointer.
++ Egel at the moment has provisional support for concurrency through a 'par'
+  construct implemented with C++ threads. That is usually implemented on
+  operating system primitives and for coarse grained parallelism. On my laptop
+  it supports rougly 20k threads, though the Egel semantics would allow for
+  a scheme (a thread is a term is a pointer) which could support much more.
 + I wanted a robust trivial scheme. I know it goes against conventional wisdom
   and I know my solution is slow but functional languages shouldn't run out of
   stack space, period. Out of memory, yes, out of stack space, no. So I went the
