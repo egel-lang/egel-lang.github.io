@@ -85,5 +85,8 @@ I would like to thank Linus Torvalds for Linux, the GNU team for their
 command line tools and compiler chain, Bram Molenaar for
 VIM, GNOME for their desktop, and Redhat for providing me with a 
 great operating system for the last twenty years.
+
+And of course, the [Milis](https://milislinux.org/) distribution maintainers for
+supplying the Egel binary package!
 </body>
 </html>
