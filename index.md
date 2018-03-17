@@ -28,22 +28,26 @@ slightly novel.
 + Exceptions
 + Concurrency
 
-## Example code
+## Example
+
+To get a taste for the language, an example is shown below.
 
 ```egel
 namespace Fibonacci (
-  using System
+    using System
   
-  def fib =
-    [ 0 -> 1
-    | 1 -> 1
-    | N -> fib (N - 2) + fib (N - 1) ]
+    def fib =
+        [ 0 -> 1
+        | 1 -> 1
+        | N -> fib (N - 2) + fib (N - 1) ]
 )
 
 using Fibonacci
 
 def main = fib 5
 ```
+
+Want to know more? Then read the following short [introduction](http://egel.readthedocs.io).
 
 ## The Egel interpreter
 
@@ -75,7 +79,6 @@ libraries and then move towards making the code mobile.
 ## Links
 
 You can find the sources on [github](http://github.com/egel-lang/).
-[Read the docs](http://egel.readthedocs.io) for a short manual.
 I blog about my progress on [blogger](http://egel-language.blogspot.nl/).
 I started on a [FAQ](https://egel-lang.github.io/FAQ.html).
 
