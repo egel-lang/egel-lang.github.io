@@ -49,6 +49,8 @@ def main = fib 5
 
 Want to know more? Then read the following short [introduction](http://egel.readthedocs.io).
 
+Or try Egel online! [TIO](https://tio.run/##NchBCoAgEEDR/ZxicJUEYQfoAEHQohMEjjKgjagtOr21sN1/nzyF1jgmyRVVyhRuSxN5Bf9j@SgK4C58eTyeUil2bFxqz3UHsOQwnnzhgk6CDTiMGg0OLkus8tVsjNGtvQ) has build v0.0.2.
+
 ## The Egel interpreter
 
 The Egel interpreter is implemented in C++ and designed to swiftly go 
