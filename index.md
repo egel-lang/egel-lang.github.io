@@ -49,7 +49,7 @@ def main = fib 5
 
 Want to know more? Then read the following short [introduction](http://egel.readthedocs.io).
 
-Or try Egel online! [TIO](https://tio.run/##NchBCoAgEEDR/ZxicJUEYQfoAEHQohMEjjKgjagtOr21sN1/nzyF1jgmyRVVyhRuSxN5Bf9j@SgK4C58eTyeUil2bFxqz3UHsOQwnnzhgk6CDTiMGg0OLkus8tVsjNGtvQ) has build v0.0.2.
+Or try Egel online! [TIO](https://tio.run/##hVTbbtpAEH33V4x4qQ0NV/WFiEptWqFKEZHICxZByMFjsqq9a9mLGtrk2@nsxeuloa0l8M6Zy5mdi3GP@ek06HYD6MJS1ChlAjciRcDnpChzJIH/SI7varhlGfbJTFneI07hScpyOhhUxmtHTn1R7Uk9CFhRikpCp6wwPxCO@47DmCBRdILgUDO@h/tjLbGwwi2rpT1@uwuCFDN4FEmV1uwnwgw@GAiLUh5JXMMKYrj6CEPYGA3jNRLHLAB6jPrz3aflF2WkMYsPIR4qjGWQ8BRCAmYzWEUQxvoURyCfkMPIOXkP5jXasCbQpqHfCUG5WvocJSwpy6wShRSUY9he5QpGESXrp0S56rsUSQnhw6o9anSlUorpR3YbCrs0hGXFuNxhnrsr62tpGDp96Gj0BbYe2oVOk69GdFbOvymXSy0TeZrDequYbU7rUKfThNT8oS0IKTZket2wPXBiAy7KpjiuVAcu/2A13XTMNiSR6XKFsX5H0Gs1l9HemfXf4sVvfOJ/WIdx7wJ37yKzRu09OT5LrzkLO3ULNWUTO2RmooauV42RqCDUhuPIHibRuUvDcijTROJ/OqkGkpo4s3PlmqjK7rUPQtObFiEoyxMpidg08Wx2VVgaXT8s3MCiDa1LoBA9vZ5nM16VmSgYRu22msMLaMXWU9gVb1d7Y78HlIOtxmPO@HesbCVC6zFSZew7cXwuTkg03kXCON3G7fD864K@CS6oIbO3sPoR6f0WaJdzk/Fbk5FfC7dmc29V98ixSiQTfEp7dO3v69xu1S/F9V6H0//j19PpNw) has build v0.0.2.
 
 ## The Egel interpreter
 
