@@ -20,7 +20,7 @@ some code. Below, the graphical representation of the term "F (G 3) (H 2 7)".
 
 You could use a stack and push stack frames for "F", "G", and "H". However, I wanted to experiment with another model, graph 
 rewriting. 
-Note that since we're rewriting eagerly we're rewriting the outermost expression first.
+Note that since we're rewriting eagerly we're rewriting the innermost expression first.
 
 The evaluation strategy Egel uses shown below is extremely simplistic: *Start* with the node which is to be rewritten first,
 *store* the result where necessary -the dotted lines-, and *continue* with the next node to rewrite -the straight lines-.
