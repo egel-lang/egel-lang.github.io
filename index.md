@@ -84,6 +84,7 @@ libraries and then move towards making the code mobile.
 You can find the sources on [github](http://github.com/egel-lang/).
 I blog about my progress on [blogger](http://egel-language.blogspot.nl/).
 I started on a [FAQ](https://egel-lang.github.io/FAQ.html).
+There's a [man](https://egel-lang.github.io/egel.1.html) page.
 
 ## Thanks
 
