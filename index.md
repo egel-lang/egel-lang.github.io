@@ -70,8 +70,9 @@ portability.
 The interpreter seems to have something between a naive Lisp and
 Python performance. A REPL and batch mode evaluation is supported.
 
-The interpreter is in an alpha state. It can symbolically rewrite but
-small bugs are still regularly discovered.
+The interpreter is in an beta state, ready for shipping. The language
+is fixed and seems to run without problems but libraries are
+either undeveloped or subject to change.
 
 ## Roadmap and mobile code
 
