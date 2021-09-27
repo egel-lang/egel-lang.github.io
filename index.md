@@ -93,7 +93,8 @@ command line tools and compiler chain, Bram Molenaar for
 VIM, GNOME for their desktop, and Redhat for providing me with a 
 great operating system for the last twenty years.
 
-And of course, the [Milis](https://milislinux.org/) distribution maintainers for
-supplying the Egel binary package!
+And of course, [TIO](https://tio.run/) for hosting the interpreter online 
+and [FSF](https://cfarm.tetaneutral.net/) for support with access to the 
+compile farm.
 </body>
 </html>
