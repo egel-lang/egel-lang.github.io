@@ -68,7 +68,13 @@ interpreter employs bytecode in a small instruction set for maximal
 portability.
 
 The interpreter seems to have something between a naive Lisp and
-Python performance. A REPL and batch mode evaluation is supported.
+Python performance though that can vary widly. To some extend, the interpreter
+is a C++ Standard Library performance checker and on the FSF compile
+farm the `million.eg` (summation of a list of the first million numbers)
+microbenchmark results in anything between 1 min 22 secs on sparc64 
+to 6 secs on Apple Silicon.
+
+A REPL and batch mode evaluation is supported.
 
 The interpreter is in an beta state, ready for shipping. The language
 is fixed and seems to run without problems but libraries are
