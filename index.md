@@ -80,6 +80,8 @@ The interpreter is in an beta state, ready for shipping. The language
 is fixed and seems to run without problems but libraries are
 either undeveloped or subject to change.
 
+For a list of builtin combinators look [here](https://github.com/egel-lang/egel-gen/blob/main/combs.md).
+
 ## Roadmap and mobile code
 
 Egel is developed as a hobby project to explore some ideas the author
