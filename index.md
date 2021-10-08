@@ -58,7 +58,7 @@ at odds which each other.
 
 The interpreter is mostly written to explore how far you can push
 an implementation of a term rewrite system based on directed acyclic graphs in idiomatic C++.
-Combinators and the evaluation graphs are implemented with reference counted
+Combinators and the evaluation graphs are implemented with standard reference counted
 objects and most of the implementation is written with utter disregard
 for performance. That has drawbacks but it also gives a highly robust system which
 can be seamlessly integrated into other C/C++ programs. Lastly, the 
