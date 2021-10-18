@@ -16,7 +16,7 @@ Possible uses are:
 + Small 'mathy' domain specific languages
 + Experiments with untyped rewriting
 
-Egel roughly falls in the same category as SASL and conceptually predates Miranda, ML, or Haskell.
+Egel roughly falls in the same category as SASL/KRC and conceptually predates Miranda, ML, or Haskell.
 
 The programming style is similar to functional programming though the operational semantics is
 slightly novel.
