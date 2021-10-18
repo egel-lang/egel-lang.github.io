@@ -49,6 +49,7 @@ def main = fib 5
 
 Want to know more? Then read the following short [introduction](http://egel.readthedocs.io).
 Or [Try it online!](https://tio.run/##hVTbbtpAEH33V4ych9qlIVzUFyIqtWmFKkVEIi9YBCEHj8mq9q5lL2po02@nsxevl4a2lsA7Zy5ndi7GHRbH40VwAQvRoJQp3IgMAZ/TsiqQBP49Pbxp4Jbl2A@U3T3iBJ6krCZXV7Xx2ZJLX9S7IGBlJWoJYVVjsScQd6HDmCBRhEGwbxjfwf2hkVha4ZY10h6/3gVBhjk8irTOGvYDYQrvDYRlJQ8krmAJCVx@gAGsjYbxBoljGgA9Rv3p7uPiszLSmMUHkAwUxnJIeQYRAdMpLGOIEn1KYpBPyGHonLwHiwZtWBNo3dJvhaBcLX2BEhaUZV6LUgrKMequcgnDmJL1U6Jc9V3KtILoYdkdNbpUKSX0I7s1hV0YwqpmXG6xKNyV9bU0DGEfQo2@wMZD30LY5qsRnZXzb8vlUstFkRWw2ihmm9Mq0um0ITV/ZAtCijWZXrdsD5zYgIuqLY4r1Z7LP1hNNx2zDUlkulxRot8x9DrNebR3Yv23eMkrn@Qf1lHSO8PdO8usUXtPjs/Sa87cTt1cTdnYDpmZqIHrVWskaoi04Si2h3F86tKy7KsslfifTqqBpCZO7Vy5Jqqye@2DyPSmQwjKi1RKIjZNPJldFZZG1w8LNzDvQusSKERPr@fZjldtJgoGcbet5vACWrHxFHbFu9Ve2@8B5WCr8Vgw/g1rW4nIegxVGftOHJ2KYxKNd5kyTrdxOzz7MqdvggtqyOwtrH5Ier8F2uXUZPTaZOjXwq3ZzFvVHXKsU8kEn9AeXfv7OrNb9VNxvdPh9P/o1/H4Gw "Egel – Try It Online")
+For a list of builtin combinators look [here](https://github.com/egel-lang/egel-gen/blob/main/combs.md).
 
 ## The Egel interpreter
 
@@ -77,8 +78,6 @@ A REPL and batch mode evaluation is supported.
 The interpreter is in an beta state, ready for shipping. The language
 is fixed and seems to run without problems but libraries are
 either undeveloped or subject to change.
-
-For a list of builtin combinators look [here](https://github.com/egel-lang/egel-gen/blob/main/combs.md).
 
 ## Roadmap and mobile code
 
