@@ -85,12 +85,11 @@ Egel is developed as a hobby project to explore some ideas the author
 has. The intention is to grow the language to support different math
 libraries and then move towards making the code mobile.
 
-## Links
+## License and Links
 
 The interpreter is distributed under 
 the [MIT](https://github.com/egel-lang/egel/blob/master/LICENSE.md) License, 
 (c) 2017 M.C.A. (Marco) Devillers.
-
 You can find the sources on [github](https://github.com/egel-lang/).
 I blog about my progress on [blogger](https://egel-language.blogspot.nl/).
 I started on a [FAQ](https://egel-lang.github.io/FAQ.html).
