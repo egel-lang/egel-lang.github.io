@@ -91,6 +91,11 @@ You can find the sources on [github](https://github.com/egel-lang/).
 I blog about my progress on [blogger](https://egel-language.blogspot.nl/).
 I started on a [FAQ](https://egel-lang.github.io/FAQ.html).
 
+The interpreter is open source and distributed under the 
+The [MIT](https://github.com/egel-lang/egel/blob/master/LICENSE.md) License 
+(Copyricht (c) 2017 M.C.A. (Marco) Devillers).
+Contact me when you need anything else.
+
 ## Thanks
 
 I would like to thank Linus Torvalds for Linux, the GNU team for their
@@ -104,8 +109,4 @@ compile farm.
 </body>
 </html>
 
-## Licensing
 
-The interpreter is open source and distributed under the 
-The MIT License (Copyricht (c) 2017 M.C.A. (Marco) Devillers).
-But contact me when you need anything else.
