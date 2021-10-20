@@ -103,3 +103,9 @@ and [FSF](https://cfarm.tetaneutral.net/) for support with access to the
 compile farm.
 </body>
 </html>
+
+## Licensing
+
+The interpreter is open source and distributed under the 
+The MIT License (Copyricht (c) 2017 M.C.A. (Marco) Devillers).
+But contact me when you need anything else.
