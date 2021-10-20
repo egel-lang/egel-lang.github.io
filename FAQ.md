@@ -72,7 +72,8 @@ Yes, and no. Or, no and yes. There isn't a type system for various reasons:
 + Yep. To keep programmers sane I actually like the idea that all runtime
   structures are trees; moreover, those are easily serializable and
   collectable. Granted, you lose some sort of expressiveness with regard
-  to, for example, Haskell but the benefits might pay off.
+  to, for example, Haskell but the benefits might pay off. You gain
+  that your memory content won't be a mess, easily.
 
 ## I am implementing cool product X. Should I include Egel for scripting?
 
