@@ -87,14 +87,14 @@ libraries and then move towards making the code mobile.
 
 ## Links
 
-You can find the sources on [github](https://github.com/egel-lang/).
-I blog about my progress on [blogger](https://egel-language.blogspot.nl/).
-I started on a [FAQ](https://egel-lang.github.io/FAQ.html).
-
-The interpreter isd distributed under the 
+The interpreter is distributed under the 
 The [MIT](https://github.com/egel-lang/egel/blob/master/LICENSE.md) License 
 (Copyricht (c) 2017 M.C.A. (Marco) Devillers).
 Contact me when you need anything else.
+
+You can find the sources on [github](https://github.com/egel-lang/).
+I blog about my progress on [blogger](https://egel-language.blogspot.nl/).
+I started on a [FAQ](https://egel-lang.github.io/FAQ.html).
 
 ## Thanks
 
