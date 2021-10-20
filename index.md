@@ -88,9 +88,8 @@ libraries and then move towards making the code mobile.
 ## Links
 
 The interpreter is distributed under 
-the [MIT](https://github.com/egel-lang/egel/blob/master/LICENSE.md) License 
-(Copyricht (c) 2017 M.C.A. (Marco) Devillers).
-Contact me when you need anything else.
+the [MIT](https://github.com/egel-lang/egel/blob/master/LICENSE.md) License, 
+(c) 2017 M.C.A. (Marco) Devillers.
 
 You can find the sources on [github](https://github.com/egel-lang/).
 I blog about my progress on [blogger](https://egel-language.blogspot.nl/).
