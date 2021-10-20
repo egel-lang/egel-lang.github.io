@@ -67,6 +67,13 @@ Yes, and no. Or, no and yes. There isn't a type system for various reasons:
   make tail calls unnecessary. It's expensive and you better hope I got 
   it right though.
   
+## No cyclic structures?
+
++ Yep. To keep programmers sane I actually like the idea that all runtime
+  structures are trees; moreover, those are easily serializable and
+  collectable. Granted, you lose some sort of expressiveness with regard
+  to, for example, Haskell but the benefits might pay off.
+
 ## I am implementing cool product X. Should I include Egel for scripting?
 
 + No. Egel is experimental, probably full of bugs, and you will likely regret
