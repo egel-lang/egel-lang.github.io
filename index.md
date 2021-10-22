@@ -91,7 +91,7 @@ The interpreter is distributed under
 the [MIT](https://github.com/egel-lang/egel/blob/master/LICENSE.md) License, 
 (c) 2017 M.C.A. (Marco) Devillers.
 The sources are on [github](https://github.com/egel-lang/),
-authors thoughts on [blogger](https://egel-language.blogspot.nl/),
+author's thoughts on [blogger](https://egel-language.blogspot.nl/),
 or in the [FAQ](https://egel-lang.github.io/FAQ.html).
 
 ## Thanks
