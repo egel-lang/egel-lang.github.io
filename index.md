@@ -9,7 +9,7 @@ title: Egel Language
 <body markdown="1">
 ## The Egel Language
 
-Egel is a very small toy language based on untyped eager combinator rewriting.
+Egel is a very small scripting language based on untyped eager combinator rewriting.
 
 Possible uses are:
 
