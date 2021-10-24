@@ -86,11 +86,8 @@ Egel is developed as a hobby project to explore some ideas the author
 has. The intention is to grow the language to support different math
 libraries and then move towards making the code mobile.
 
-## License and links
+## Links
 
-The interpreter is distributed under 
-the [MIT](https://github.com/egel-lang/egel/blob/master/LICENSE.md) License, 
-(c) 2017 M.C.A. (Marco) Devillers.
 The sources are on [github](https://github.com/egel-lang/),
 author's thoughts on [blogger](https://egel-language.blogspot.nl/),
 or in the [FAQ](https://egel-lang.github.io/FAQ.html).
@@ -107,6 +104,10 @@ great operating system for the last twenty years.
 And of course, [TIO](https://tio.run/) for hosting the interpreter online 
 and [FSF](https://cfarm.tetaneutral.net/) for support with access to the 
 compile farm.
+
+The interpreter and associated documentation is distributed under 
+the [MIT](https://github.com/egel-lang/egel/blob/master/LICENSE.md) License, 
+(c) 2017 M.C.A. (Marco) Devillers.
 </body>
 </html>
 
