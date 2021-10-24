@@ -95,6 +95,9 @@ The sources are on [github](https://github.com/egel-lang/),
 author's thoughts on [blogger](https://egel-language.blogspot.nl/),
 or in the [FAQ](https://egel-lang.github.io/FAQ.html).
 
+A note on the [operational semantics](https://github.com/egel-lang/egel-tex/blob/master/semantics/semantics.pdf) 
+the interpreter exploits.
+
 ## Thanks
 
 I would like to thank Linus Torvalds for Linux, the GNU team for their
