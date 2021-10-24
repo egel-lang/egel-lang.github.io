@@ -94,9 +94,8 @@ the [MIT](https://github.com/egel-lang/egel/blob/master/LICENSE.md) License,
 The sources are on [github](https://github.com/egel-lang/),
 author's thoughts on [blogger](https://egel-language.blogspot.nl/),
 or in the [FAQ](https://egel-lang.github.io/FAQ.html).
-
-A note on the [operational semantics](https://github.com/egel-lang/egel-tex/blob/master/semantics/semantics.pdf) 
-the interpreter exploits.
+The [operational semantics](https://github.com/egel-lang/egel-tex/blob/master/semantics/semantics.pdf) 
+are discussed in a small technical note.
 
 ## Thanks
 
