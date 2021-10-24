@@ -68,7 +68,8 @@ portability.
 
 The interpreter seems to have something between a naive Lisp and
 Python performance though that can vary widly. To some extent, the interpreter
-is a C++ Standard Library performance checker and on the FSF compile
+is a C++ Standard Library and microprocessor architecture performance checker 
+and on the FSF compile
 farm the 'million.eg' (summation of a list of the first million natural 
 numbers) microbenchmark results in anything between 1 min 22 secs on sparc64 
 to 6 secs on Apple Silicon.
