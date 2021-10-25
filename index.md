@@ -107,7 +107,7 @@ compile farm.
 
 The interpreter and associated documentation is distributed under 
 the [MIT](https://github.com/egel-lang/egel/blob/master/LICENSE.md) License, 
-(c) 2017-2021 Marco Devillers.
+© 2017 Marco Devillers.
 </body>
 </html>
 
