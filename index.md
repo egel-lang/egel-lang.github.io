@@ -88,6 +88,10 @@ or in the [FAQ](https://egel-lang.github.io/FAQ.html).
 The [operational semantics](https://github.com/egel-lang/egel-tex/blob/master/semantics/semantics.pdf) 
 are discussed in a small technical note.
 
+The interpreter and associated documentation is distributed under 
+the [MIT](https://github.com/egel-lang/egel/blob/master/LICENSE.md) License, 
+© 2017 Marco Devillers.
+
 ## Thanks
 
 I would like to thank Linus Torvalds for Linux, the GNU team for their
@@ -99,9 +103,6 @@ And of course, [TIO](https://tio.run/) for hosting the interpreter online
 and [FSF](https://cfarm.tetaneutral.net/) for support with access to the 
 compile farm.
 
-The interpreter and associated documentation is distributed under 
-the [MIT](https://github.com/egel-lang/egel/blob/master/LICENSE.md) License, 
-© 2017 Marco Devillers.
 </body>
 </html>
 
