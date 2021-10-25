@@ -105,6 +105,8 @@ And of course, [TIO](https://tio.run/) for hosting the interpreter online
 and [FSF](https://cfarm.tetaneutral.net/) for support with access to the 
 compile farm.
 
+## Copyright
+
 The interpreter and associated documentation is distributed under 
 the [MIT](https://github.com/egel-lang/egel/blob/master/LICENSE.md) License, 
 © 2017 Marco Devillers.
