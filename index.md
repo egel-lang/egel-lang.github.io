@@ -80,12 +80,6 @@ The interpreter is in an beta state, ready for shipping. The language
 is fixed and seems to run without problems but libraries are
 either undeveloped or subject to change.
 
-## Roadmap and mobile code
-
-Egel is developed as a hobby project to explore some ideas the author
-has. The intention is to grow the language to support different math
-libraries and then move towards making the code mobile.
-
 ## Links
 
 The sources are on [github](https://github.com/egel-lang/),
@@ -104,8 +98,6 @@ great operating system for the last twenty years.
 And of course, [TIO](https://tio.run/) for hosting the interpreter online 
 and [FSF](https://cfarm.tetaneutral.net/) for support with access to the 
 compile farm.
-
-## Copyright
 
 The interpreter and associated documentation is distributed under 
 the [MIT](https://github.com/egel-lang/egel/blob/master/LICENSE.md) License, 
