@@ -76,7 +76,7 @@ to 6 secs on Apple Silicon.
 
 A REPL, batch mode, and command mode evaluation are supported.
 
-The interpreter is in an beta state, ready for shipping. The language
+The interpreter is in a beta state, ready for shipping. The language
 is fixed and seems to run without problems but libraries are
 either undeveloped or subject to change.
 
