@@ -90,9 +90,7 @@
 <p>Egel is an interpreted, interactive, eager-combinator  programming language that
 combines remarkable power with very clear syntax.</p>
 
-<p>A short tutorial as in introduction into the language is given below.</p>
-
-<p>Egel's basic power can be extended with your own modules written in C++.
+<p>Egel's basic functionality can be extended with your own modules written in C++.
 Those modules are dynamically loaded.</p>
 
 <h2 id="OPTIONS">OPTIONS</h2>
@@ -108,11 +106,11 @@ Those modules are dynamically loaded.</p>
 
 <h2 id="TUTORIAL">TUTORIAL</h2>
 
-<p>Below, a short introduction to the Egel language is given.</p>
+<p>Egel is an expression language and the interpreter a straightforward symbolic evaluator.</p>
 
 <h3 id="Expressions">Expressions</h3>
 
-<p>Egel programs consist of expression which are evaluated eagerly.</p>
+<p>Egel code consist of expression which are evaluated eagerly.</p>
 
 <ul>
 <li><p>Basic primitive types are integers, floats, unicode characters, and unicode strings.</p>
@@ -121,7 +119,7 @@ Those modules are dynamically loaded.</p>
 <li><p>All constants compose.</p>
 
 <p><code>(0 1)</code> is just as legal as <code>(cons 'a' nil)</code></p></li>
-<li><p>Rewriting is done with the pattern-matching abstraction, uppercase letters denote variables</p>
+<li><p>Rewriting is done with the pattern-matching abstraction, uppercase letters denote variables.</p>
 
 <p><code>[ X -&gt; X ]</code> , <code>[ (cons HEAD TAIL) -&gt; HEAD ]</code></p>
 
@@ -131,7 +129,7 @@ Those modules are dynamically loaded.</p>
 <li><p>Patterns may hold rudimentary type matches.</p>
 
 <p><code>[ I::int -&gt; "an int" | C::cons -&gt; "a cons" ]</code></p></li>
-<li><p>Let expressions allow to assign values to intermediateries.</p>
+<li><p>Let expressions assign values to intermediateries.</p>
 
 <p><code>let X = 1 + 2 in X * X</code></p></li>
 <li><p>A semicolon separates computations.</p>
@@ -140,15 +138,19 @@ Those modules are dynamically loaded.</p>
 <li><p>Exception handling is supported, any value may be thrown and caught.</p>
 
 <p><code>try 1 + throw "failure" catch [ EXC -&gt; print EXC ]</code></p></li>
-<li><p>Parallell programming is achieved  through the <code>par</code> and <code>proc</code> abstractions.
+<li><p>Parallell programming is achieved  through the <code>par</code> and <code>proc</code> combinators.
 A <code>par</code> starts two computations in parallel and returns a tuple of both values after both complete.</p>
 
 <p><code>par [ _ -&gt; _computation0_ ] [ _ -&gt; _computation1_ ]</code></p>
 
-<p>The process abstraction is not discussed here.</p></li>
+<p>The process combinator is not discussed here.</p></li>
 <li><p>Formatting strings is handled with the <code>format</code> combinator, see <a href="https://fmt.dev/" data-bare-link="true">https://fmt.dev/</a>.</p>
 
 <p><code>print (format "Hello {}" "world")</code></p></li>
+<li><p>The interpreter implements a term rewriter though has mutuable references.
+Cycles won't be garbage collected.</p>
+
+<p><code>let X = ref 0 in set_ref X 1; get_ref X</code></p></li>
 </ul>
 
 
@@ -204,10 +206,10 @@ Hello world!
 2
 </code></pre>
 
-<p>Supply a command to use <code>egel -e</code> as a simple calculator.</p>
+<p>Supply a command to use <code>egel -e</code> as a simple calculator. Double semicolons are separators.</p>
 
-<pre><code>$ egel -e "1+1"
-2
+<pre><code>$ egel fib.eg -e "using Fibonnaci;; fib 3"
+5
 </code></pre>
 
 <h2 id="FILES">FILES</h2>
@@ -215,8 +217,14 @@ Hello world!
 <p>The following files should be in the <code>EGEL_INCLUDE</code> directory.</p>
 
 <dl>
-<dt><code>prelude.eg</code></dt><dd><p>The standard Egel prelude.</p></dd>
-<dt><code>io.ego</code> <code>regex.ego</code></dt><dd><p>Standard input/output, regexes dynamic libraries.</p></dd>
+<dt><code>prelude.eg</code></dt><dd>The standard Egel prelude.</dd>
+</dl>
+
+
+<p>The following files should be somewhere in the dynamic libraries path.</p>
+
+<dl>
+<dt><code>os.ego</code> <code>fs.ego</code> <code>regex.ego</code></dt><dd>input/output, filesystem, regexes dynamic libraries.</dd>
 </dl>
 
 
@@ -234,7 +242,7 @@ Hello world!
 
 <h2 id="AUTHOR">AUTHOR</h2>
 
-<p>M.C.A. (Marco) Devillers <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x6d;&#x61;&#x72;&#99;&#x6f;&#x2e;&#100;&#x65;&#x76;&#105;&#x6c;&#108;&#101;&#114;&#x73;&#64;&#103;&#109;&#97;&#x69;&#108;&#x2e;&#x63;&#x6f;&#109;" data-bare-link="true">&#x6d;&#x61;&#x72;&#x63;&#x6f;&#46;&#100;&#101;&#x76;&#105;&#x6c;&#x6c;&#x65;&#x72;&#115;&#x40;&#103;&#109;&#x61;&#105;&#x6c;&#x2e;&#99;&#111;&#x6d;</a></p>
+<p>M.C.A. (Marco) Devillers <a href="&#109;&#97;&#105;&#x6c;&#116;&#x6f;&#58;&#x6d;&#x61;&#114;&#99;&#111;&#46;&#x64;&#101;&#x76;&#105;&#x6c;&#108;&#101;&#114;&#115;&#64;&#103;&#109;&#x61;&#105;&#x6c;&#x2e;&#x63;&#111;&#x6d;" data-bare-link="true">&#109;&#97;&#114;&#99;&#x6f;&#46;&#100;&#101;&#118;&#105;&#x6c;&#108;&#101;&#x72;&#115;&#64;&#103;&#109;&#97;&#105;&#x6c;&#x2e;&#x63;&#x6f;&#109;</a></p>
 
 <h2 id="SEE-ALSO">SEE ALSO</h2>
 
@@ -243,7 +251,7 @@ Hello world!
 
   <ol class='man-decor man-foot man foot'>
     <li class='tl'></li>
-    <li class='tc'>September 2021</li>
+    <li class='tc'>October 2021</li>
     <li class='tr'>egel(1)</li>
   </ol>
 
