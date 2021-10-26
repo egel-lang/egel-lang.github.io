@@ -101,8 +101,8 @@ VIM, GNOME for their desktop, and Redhat for providing me with a
 great operating system for the last twenty years.
 
 And of course, [TIO](https://tio.run/) for hosting the interpreter online 
-and [FSF](https://cfarm.tetaneutral.net/) for support with access to the 
-compile farm.
+and [FSF](https://cfarm.tetaneutral.net/) for their gracious support in
+supplying access to the compile farm.
 
 </body>
 </html>
