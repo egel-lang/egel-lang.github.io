@@ -85,7 +85,7 @@ either undeveloped or subject to change.
 The sources are on [github](https://github.com/egel-lang/),
 author's thoughts on [blogger](https://egel-language.blogspot.nl/),
 or in the [FAQ](https://egel-lang.github.io/FAQ.html).
-The a [man](https://egel-lang.github.io/egel.1.html) page.
+The [man](https://egel-lang.github.io/egel.1.html) page.
 The [operational semantics](https://github.com/egel-lang/egel-tex/blob/master/semantics/semantics.pdf) 
 are discussed in a small technical note.
 
