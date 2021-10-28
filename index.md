@@ -9,7 +9,8 @@ title: Egel Language
 <body markdown="1">
 ## The Egel Language
 
-Egel is an untyped concurrent functional scripting language based on eager combinator rewriting.
+Egel is an untyped concurrent functional scripting language based on eager combinator rewriting with
+a concise but remarkably powerful syntax.
 
 Possible uses are:
 
