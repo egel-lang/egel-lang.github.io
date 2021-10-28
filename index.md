@@ -87,7 +87,7 @@ author's thoughts on [blogger](https://egel-language.blogspot.nl/),
 or in the [FAQ](https://egel-lang.github.io/FAQ.html).
 Read the fine [manual](https://egel-lang.github.io/egel.1.html).
 The [operational semantics](https://github.com/egel-lang/egel-tex/blob/master/semantics/semantics.pdf) 
-are discussed in a small technical note.
+are discussed in a small technical note. [Twitter](https://twitter.com/egel_language/)
 
 The interpreter and associated documentation is distributed under 
 the [MIT](https://github.com/egel-lang/egel/blob/master/LICENSE.md) License, 
