@@ -19,9 +19,6 @@ Possible uses are:
 
 Egel roughly falls in the same category as SASL/KRC and conceptually predates Miranda, ML, or Haskell.
 
-The programming style is similar to functional programming though the operational semantics is
-slightly novel.
-
 ## Language features
 
 + Symbolic evaluation
