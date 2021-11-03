@@ -132,7 +132,7 @@ Those modules are dynamically loaded.</p>
 <p><code>\(cons X XX) -&gt; X</code></p></li>
 <li><p>Patterns may hold rudimentary type matches.</p>
 
-<p><code>[ I::int -&gt; "an int" | C::cons -&gt; "a cons" ]</code></p></li>
+<p><code>[ I:int -&gt; "an int" | C:cons -&gt; "a cons" ]</code></p></li>
 <li><p>Let expressions assign values to intermediaries.</p>
 
 <p><code>let X = 1 + 2 in X * X</code></p></li>
@@ -189,7 +189,7 @@ namespace Fibonnaci (
 
 using System
 
-def main = Fibonnaci:pfib (3+2)
+def main = Fibonnaci::pfib (3+2)
 </code></pre>
 
 <h2 id="EXAMPLES">EXAMPLES</h2>
