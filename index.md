@@ -19,8 +19,7 @@ Possible uses are:
 
 Egel roughly falls in the same category as SASL/KRC and conceptually predates Miranda, ML, or Haskell.
 
-Though programmers will mostly be interested in the language, Egel is principally about showcasing the
-_usefulness_ of a particular operational model, a means of calculation.
+Egel is principally about showcasing the _usefulness_ of a particular operational model, a means of calculation.
 
 ## Language features
 
