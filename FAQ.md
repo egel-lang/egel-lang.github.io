@@ -16,6 +16,10 @@ have and document some design decisions.
 
 Yes, and no. Or, no and yes. There isn't a type system for various reasons:
 
++ Egel is about showcasing the _usefulness_ of an operational model, a 
+  particular manner of calculation. It has concurrency and exceptions, it is
+  aimed at mobile code, and it shows how reference counting can be exploited.
+  Types are mostly in the way of that goal.
 + C++ is verbose. Even this small interpreter took a lot of work. A type system
   would have increased that burden, it isn't what I am interested in, and I
   am not sure the additional work would pay off since I only wish to support
