@@ -80,7 +80,7 @@ The interpreter is in a beta state, ready for shipping. The language
 is fixed and seems to run without problems but libraries are
 either undeveloped or subject to change.
 
-Egel's long term goal is mobile code, transparently shoot any combinator
+Egel's long term goal is mobile (data-center) code, transparently shoot any combinator
 anywhere.
 
 ## Links
