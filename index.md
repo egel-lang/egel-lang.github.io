@@ -17,9 +17,9 @@ Possible uses are:
 + Small 'mathy' domain specific languages
 + Experiments with untyped rewriting
 
-Egel roughly falls in the same category as SASL/KRC and conceptually predates Miranda, ML, or Haskell.
+Egel roughly falls in the same category as SASL/KRC and conceptually predates Miranda, ML, or Haskell; it is principally about showcasing the _usefulness_ of a particular operational model, a novel means of calculation.
 
-Egel is principally about showcasing the _usefulness_ of a particular operational model, a novel means of calculation.
+Egel's long term goal is mobile code, transparently shoot any combinator anywhere.
 
 ## Language features
 
@@ -80,8 +80,6 @@ The interpreter is in a beta state, ready for shipping. The language
 is fixed and seems to run without problems but libraries are
 either undeveloped or subject to change.
 
-Egel's long term goal is mobile (data-center) code, transparently shoot any combinator
-anywhere.
 
 ## Links
 
