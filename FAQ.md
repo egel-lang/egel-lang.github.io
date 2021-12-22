@@ -78,6 +78,14 @@ Yes, and no. Or, no and yes. There isn't a type system for various reasons:
   collectable. Granted, you lose some sort of expressiveness with regard
   to, for example, Haskell but the benefits might pay off. You gain
   that your memory content won't be a mess, easily.
+  
++ Another possible benefit is that rewriting acyclic graphs puts the 
+  operational model in the middle of stack machines (like postscript)
+  or generalized graph rewriters (like Haskell). This model should
+  allow fast compacting garbage collection, I am not sure whether I'll
+  implement that though. But it is an unique quality deserving it's own
+  exploration. At minimum, Egel is another proof that you don't lose
+  a lot of expressiveness switching to acyclic graphs.
 
 ## I am implementing cool product X. Should I include Egel for scripting?
 
