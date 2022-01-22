@@ -19,7 +19,7 @@ Possible uses are:
 
 Egel roughly falls in the same category as SASL/KRC and conceptually predates Miranda, ML, or Haskell; it is principally about showcasing the _usefulness_ of a particular operational model, a novel means of calculation.
 
-Egel's long term goal is mobile code, transparently shoot any combinator anywhere.
+Egel's long term goal is mobile code, transparently shoot any combinator anywhere. Meanwhile, it's primary purpose is to give people a small pluggable calculator with good C++ interopability.
 
 ## Language features
 
