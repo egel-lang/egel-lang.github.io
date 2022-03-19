@@ -17,7 +17,7 @@ Possible uses are:
 + Small 'mathy' domain specific languages
 + Experiments with untyped rewriting
 
-Egel roughly falls in the same category as SASL/KRC and conceptually predates Miranda, ML, or Haskell; it is principally about showcasing the _usefulness_ of a particular operational model, a novel means of calculation.
+Egel roughly falls in the same category as SASL/KRC and conceptually predates Miranda, ML, or Haskell; it is an esoteric language exploring dynamic functional programming by relaxing a maximal number of constraints while showcasing a novel means of calculation. Egel is also a useful language for software engineering in the small.
 
 Egel's long term goal is mobile code, transparently shoot any combinator anywhere.
 
