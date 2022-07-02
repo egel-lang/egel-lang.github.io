@@ -55,7 +55,10 @@ For a list of builtin combinators look [here](https://github.com/egel-lang/egel-
 
 The Egel interpreter is implemented in C++ and designed to swiftly go 
 from reading the sources to evaluation, though these goals are somewhat
-at odds with each other.
+at odds with each other. Egel is primarily about exploiting a trivialized 
+operational model, a program (state) can be represented as a directed
+acyclic graph _solely_ and program evaluation corresponds to trampolining
+the combinator at the root of that graph.
 
 The interpreter is mostly written to explore how far you can push
 an implementation of a term rewrite system based on directed acyclic graphs in idiomatic C++.
