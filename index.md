@@ -64,25 +64,11 @@ The interpreter is mostly written to explore how far you can push
 an implementation of a term rewrite system based on directed acyclic graphs in idiomatic C++.
 Combinators and the evaluation graphs are implemented with standard reference counted
 objects and most of the implementation is written with utter disregard
-for performance. That has drawbacks but it also gives a highly robust system which
-can be seamlessly integrated into other C/C++ programs. Lastly, the 
-interpreter employs bytecode in a small instruction set for maximal
-portability.
-
-The interpreter seems to have something between a naive Lisp and
-Python performance though that can vary widly. To some extent, the interpreter
-is a C++ Standard Library and microprocessor architecture performance checker 
-and on the FSF compile
-farm the 'million.eg' (summation of a list of the first million natural 
-numbers) microbenchmark results in anything between 1 min 22 secs on sparc64 
-to 6 secs on Apple Silicon.
+for performance.
 
 A REPL, batch mode, and command mode evaluation are supported.
 
-The interpreter is in a beta state, ready for shipping. The language
-is fixed and seems to run without problems but libraries are
-either undeveloped or subject to change.
-
+The interpreter is in an alpha state, everything is still subject to possible change.
 
 ## Links
 
