@@ -60,8 +60,6 @@ operational model, a program (state) can be represented as a directed
 acyclic graph _solely_ and program evaluation corresponds to trampolining
 the combinator at the root of that graph.
 
-The interpreter is written to explore how far you can push
-an implementation of a term rewrite system based on directed acyclic graphs in idiomatic C++.
 Combinators and the evaluation graphs are implemented with standard reference counted
 objects and the implementation is written with utter disregard
 for performance.
