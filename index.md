@@ -17,9 +17,9 @@ Possible uses are:
 + Small 'mathy' domain specific languages
 + Experiments with untyped rewriting
 
-Egel roughly falls in the same category as SASL/KRC and conceptually predates Miranda, ML, or Haskell; it combines a large number of ideas but mostly is an esoteric language exploring dynamic functional programming through relaxing a maximal number of constraints while showcasing a novel means of calculation. Egel is also a useful language for software engineering in the small and easily combines with C/C++.
+Egel roughly falls in the same category as SASL/KRC and conceptually predates Miranda, ML, or Haskell; it combines a large number of ideas and is an esoteric language exploring dynamic functional programming through relaxing a maximal number of constraints while showcasing a novel means of calculation. Egel is also a useful language for software engineering in the small and easily combines with C/C++.
 
-Egel's long term goal is mobile code, transparently shoot any combinator anywhere.
+Egel's long-term goal is mobile code, transparently shoot any combinator anywhere.
 
 ## Language features
 
@@ -30,7 +30,7 @@ Egel's long term goal is mobile code, transparently shoot any combinator anywher
 
 ## Example
 
-To get a taste for the language, an example is shown below.
+To get a taste of the language, an example is shown below.
 
 ```egel
 namespace Fibonacci (
@@ -60,10 +60,10 @@ operational model, a program (state) can be represented as a directed
 acyclic graph _solely_ and program evaluation corresponds to trampolining
 the combinator at the root of that graph.
 
-The interpreter is mostly written to explore how far you can push
+The interpreter is written to explore how far you can push
 an implementation of a term rewrite system based on directed acyclic graphs in idiomatic C++.
 Combinators and the evaluation graphs are implemented with standard reference counted
-objects and most of the implementation is written with utter disregard
+objects and the implementation is written with utter disregard
 for performance.
 
 A REPL, batch mode, and command mode evaluation are supported.
