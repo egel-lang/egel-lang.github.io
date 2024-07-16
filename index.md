@@ -83,10 +83,10 @@ the [MIT](https://github.com/egel-lang/egel/blob/master/LICENSE.md) License,
 
 I would like to thank Linus Torvalds for Linux, the GNU team for their
 command line tools and compiler chain, Bram Molenaar for
-VIM, GNOME for their desktop, and Redhat for providing me with a 
+VIM, GNOME for their desktop, and Red Hat for providing me with a 
 great operating system for the last twenty years.
 
-And of course, [FSF](https://cfarm.tetaneutral.net/) for their gracious support in
+And of course, [CFarm](https://cfarm.tetaneutral.net/) for their gracious support in
 supplying access to the compile farm.
 
 </body>
