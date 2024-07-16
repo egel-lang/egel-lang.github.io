@@ -30,8 +30,6 @@ Egel's long-term goal is mobile code, transparently shoot any combinator anywher
 
 ## Example
 
-To get a taste of the language, an example is shown below.
-
 ```egel
 namespace Fibonacci (
     using System
