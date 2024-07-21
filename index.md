@@ -54,7 +54,7 @@ operational model, a program (state) can be represented as a directed
 acyclic graph _solely_ and program evaluation corresponds to trampolining
 the combinator at the root of that graph.
 
-Combinators and the evaluation graphs are implemented with standard reference counted
+Combinators and evaluation graphs are implemented with standard reference counted
 objects and the implementation is written with utter disregard
 for performance.
 
