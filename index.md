@@ -19,7 +19,7 @@ Possible uses are:
 
 Egel roughly falls in the same category as SASL/KRC and conceptually predates Miranda, ML, or Haskell; it combines a large number of ideas and is an esoteric language exploring dynamic functional programming through relaxing a maximal number of constraints while showcasing a novel means of calculation. Egel is also a useful language for software engineering in the small and easily combines with C/C++.
 
-Egel's long-term goal is mobile code, transparently shoot any combinator anywhere.
+Egel's long-term goal is to use mobile code to shoot any combinator anywhere transparently.
 
 ## Language features
 
@@ -47,7 +47,7 @@ def main = fib 5
 
 ## The Egel interpreter
 
-The Egel interpreter is implemented in C++ and designed to swiftly go 
+The Egel interpreter is implemented in C++ and designed to go swiftly 
 from reading the sources to evaluation, though these goals are somewhat
 at odds with each other. Egel is primarily about exploiting a trivialized 
 operational model, a program (state) can be represented as a directed
@@ -75,7 +75,7 @@ are discussed in a small technical note.
 For a list of builtin combinators look [here](https://github.com/egel-lang/egel-gen/blob/main/combs.md).
 Or read the following short [introduction](http://egel.readthedocs.io).
 
-The interpreter and associated documentation is distributed under 
+The interpreter and associated documentation are distributed under 
 the [MIT](https://github.com/egel-lang/egel/blob/master/LICENSE.md) License, 
 © 2017 Marco Devillers.
 
