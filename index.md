@@ -67,7 +67,7 @@ The interpreter is in an alpha state, everything is still subject to possible ch
 The sources are on [github](https://github.com/egel-lang/),
 author's thoughts on [blogger](https://egel-language.blogspot.nl/),
 or in the [FAQ](https://egel-lang.github.io/FAQ.html).
-There is a provisional [Website](https://egel.dev).
+There is a provisional [website](https://egel.dev).
 Also, [Twitter](https://twitter.com/egel_language/).
 Read the fine [manual](https://egel-lang.github.io/egel.1.html).
 The [operational semantics](https://github.com/egel-lang/egel-tex/blob/master/semantics/semantics.pdf) 
