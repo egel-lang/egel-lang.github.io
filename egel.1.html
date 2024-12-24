@@ -118,6 +118,7 @@
 </table>
 
 <h2 id="DESCRIPTION">DESCRIPTION</h2>
+
 <p>Egel is an untyped concurrent functional scripting language based on
 eager combinator rewriting with a concise but remarkably powerful 
 syntax.</p>
@@ -161,10 +162,10 @@ evaluator.</p>
 
 <ul>
   <li>
-    <p>Basic primitives are integers, floats, unicode characters, and 
+    <p>Basic primitives are integers, floats, complex, unicode characters, and 
 unicode strings.</p>
 
-    <p><code>0 1 2</code> , <code>0.0 3.14 -1.2</code> , <code>'a'</code> <code>'∀'</code> , or <code>"Hello World!"</code></p>
+    <p><code>0 1 2</code> , <code>0.0 3.14 -1.2+3.4j</code> , <code>'a'</code> <code>'∀'</code> , or <code>"Hello World!"</code></p>
   </li>
   <li>
     <p>All constants compose.</p>
@@ -247,7 +248,7 @@ Cycles won't be garbage collected.</p>
   <li>
     <p>A <code>def</code> declaration introduces a combinator.</p>
 
-    <p><code>def fac = [0 -&gt; 1 | N -&gt; N * fac (N - 1)</code></p>
+    <p><code>def fac = [0 -&gt; 1 | N -&gt; N * fac (N - 1)]</code></p>
   </li>
   <li>
     <p>A <code>val</code> declaration introduces a combinator who's body is
@@ -277,7 +278,7 @@ namespace Fibonacci (
   def fib =
     [ 0 -&gt; 0
     | 1 -&gt; 1
-    | N -&gt; fib (N- 2) + fib (N- 1) ]
+    | N -&gt; fib (N- 2) + fib (N - 1) ]
 
 )
 
@@ -322,9 +323,8 @@ semicolons are separators.</p>
 </dt>
 <dd>The standard Egel prelude and additional scripts.</dd>
 <dt>
-<code>os.ego</code> <code>fs.ego</code> <code>regex.ego</code>
-</dt>
-<dd>input/output, filesystem, regexes dynamic libraries.</dd>
+<code>random.ego</code>, etc. </dt>
+<dd>Dynamically loaded libraries.</dd>
 </dl>
 
 <h2 id="ENVIRONMENT">ENVIRONMENT</h2>
@@ -351,7 +351,7 @@ semicolons are separators.</p>
 
   <ol class='man-decor man-foot man foot'>
     <li class='tl'></li>
-    <li class='tc'>August 2024</li>
+    <li class='tc'>December 2024</li>
     <li class='tr'>egel(1)</li>
   </ol>
 
